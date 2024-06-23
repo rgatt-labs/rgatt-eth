@@ -1,0 +1,35 @@
+.header {
+    background-color: black;
+    color: white;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .nav a {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: gray;
+  }
+  
+  .launchApp {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .launchApp:hover {
+    background-color: #1e1e1e;
+  }
+  
