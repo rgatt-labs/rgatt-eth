@@ -1,46 +1,76 @@
+/* src/pages/dAppHome.module.css */
 .container {
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-  
-  .header {
-    padding: 1.5rem 0;
-  }
-  
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .navLinks {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navLink {
-    margin-right: 1rem;
-    color: #4a4a4a;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .navLink:hover {
-    color: #1a1a1a;
-  }
-  
-  .launchApp {
-    background-color: #4299e1;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  .launchApp:hover {
-    background-color: #3182ce;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.vaultsExplorer {
+  margin-right: 20px;
+}
+
+.searchBar {
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dashboard {
+  margin-right: 20px;
+}
+
+.connectButton {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.vaultSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vault {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.assetsButton, .chainButton, .simulateButton {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+

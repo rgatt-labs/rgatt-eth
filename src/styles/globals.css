@@ -1,18 +1,15 @@
-/* globals.css */
+/* styles/globals.css */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
+  font-family: 'Rubik', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Définissez le poids par défaut selon vos besoins */
+  font-style: normal;
+}
+
+/* Ajoutez d'autres styles globaux selon vos besoins */
+/* styles/globals.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+}

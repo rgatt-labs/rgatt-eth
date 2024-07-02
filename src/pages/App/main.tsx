@@ -1,7 +1,7 @@
 // src/pages/dAppHome.tsx
 import React from 'react';
 import styles from './Header.module.css';
-import ChainDropdown from '../ChainDropdown/ChainDropdown';
+import ChainDropdown from '@/components/ChainDropdown/ChainDropdown';
 
 const DAppHome: React.FC = () => {
   return (
