@@ -2,6 +2,11 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import '../styles/globals.css';
+import { WagmiProvider } from 'wagmi';
+import { config } from '../wagmiConfig';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,7 +19,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />
+	<WagmiProvider config={config}>
+		<QueryClientProvider client={queryClient}>
+			<Component {...pageProps} />
+		</QueryClientProvider>
+	</WagmiProvider>
     </>
   );
 }

@@ -13,9 +13,9 @@ const LandingPage: React.FC = () => {
             <Image src="/rgatt.png" alt="rgatt logo" width={150} height={150} />
           </div>
           <nav className={styles.nav}>
-            <Link href="/about" legacyBehavior><a>About Us</a></Link>
-            <Link href="/governance" legacyBehavior><a>Governance</a></Link>
-            <Link href="/community" legacyBehavior><a>Community</a></Link>
+            <Link href="/about">About us</Link>
+            <Link href="/governance">Governance</Link>
+            <Link href="/community">Community</Link>
             <a href="https://www.notion.so/rgatt-Career-ee3e825b78074237ac561acedc6a2d9b" className={styles.navLink} target="_blank">Career</a>
             <a href="https://app.gitbook.com/o/SrhVlI9gMVtnIeFvV0U2/s/LJrIJoWVnX9eC5KfHPFf/" className={styles.navLink} target="_blank">Docs</a>            
             <Link href="/app" legacyBehavior>

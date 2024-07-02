@@ -1,6 +1,7 @@
 // src/pages/dAppHome.tsx
 import React from 'react';
 import styles from './App.module.css';
+import ConnectButton from '../../components/walletConnect/connectButton';
 
 const App: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const App: React.FC = () => {
           <input type="text" placeholder="Search..." className={styles.searchBar} />
           <div className={styles.dashboard}>Dashboard</div>
           {/* <ChainDropdown /> */}
-          <div className={styles.connectButton}>Connect</div>
+          <ConnectButton />
         </nav>
       </header>
       <main className={styles.main}>
