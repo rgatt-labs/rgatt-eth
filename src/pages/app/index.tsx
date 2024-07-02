@@ -1,9 +1,8 @@
 // src/pages/dAppHome.tsx
 import React from 'react';
-import styles from './Header.module.css';
-import ChainDropdown from '@/components/ChainDropdown/ChainDropdown';
+import styles from './App.module.css';
 
-const DAppHome: React.FC = () => {
+const App: React.FC = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -12,7 +11,7 @@ const DAppHome: React.FC = () => {
           <div className={styles.vaultsExplorer}>Vaults Explorer</div>
           <input type="text" placeholder="Search..." className={styles.searchBar} />
           <div className={styles.dashboard}>Dashboard</div>
-          <ChainDropdown />
+          {/* <ChainDropdown /> */}
           <div className={styles.connectButton}>Connect</div>
         </nav>
       </header>
@@ -41,4 +40,4 @@ const DAppHome: React.FC = () => {
   );
 };
 
-export default DAppHome;
+export default App;
