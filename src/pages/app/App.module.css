@@ -1,77 +1,109 @@
-/* src/pages/app/app.css */
+.dapp {
+  background-color: #1d1815; /* Fond brun foncé */
+  color: white; /* Texte blanc */
+  min-height: 100vh; /* Hauteur minimale de la fenêtre d'affichage */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer; /* Curseur pointer pour indiquer que le logo est cliquable */
+}
+
+.nav {
+  align-items: center;
+}
+
+.vaults,
+.explorer,
+.dashboard {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: white; /* Couleur de texte par défaut */
+  text-decoration: none; /* Enlever le soulignement par défaut */
+}
+
+.vaultsExplorer:hover,
+.dashboard:hover {
+  color: #ffa500; /* Orange au survol */
+}
+
+.searchBar {
+  flex: 1; /* Permet à la barre de recherche de prendre tout l'espace disponible */
+  padding: 10px;
+  padding-right: 200px;
+  border: 1px solid #444;
+  border-radius: 15px;
+  background-color: #333;
+  color: white;
+  outline: none;
+}
+
+.searchBar::placeholder {
+  color: #bbb;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.connectButton {
+  padding: 10px 20px;
+  background-color: #ffa500;
+  color: #1d1815;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.connectButton:hover {
+  background-color: #cc8400;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
   .nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .vaultsExplorer {
-    margin-right: 20px;
-  }
-  
-  .searchBar {
-    margin-right: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .dashboard {
-    margin-right: 20px;
-  }
-  
-  .connectButton {
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: #fff;
-    border-radius: 5px;
-  }
-  
-  .main {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
   }
-  
-  .vaultSection {
-    display: flex;
-    justify-content: space-between;
+
+  .vaultsExplorer,
+  .dashboard {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .searchBar {
     width: 100%;
+    margin-bottom: 10px;
   }
-  
-  .vault {
-    flex: 1;
-    margin: 0 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .assetsButton, .chainButton, .simulateButton {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-  }
-  
-  
+}
