@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './header.module.css';
-import ConnectButton from '../walletConnect/connectButton';
+import ConnectButton from '../Wallet/connectButton';
 
 const Header: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       <div className={styles.logo}>
         <Link href="/" passHref legacyBehavior>
           <a>
-            <Image src="/r.png" alt="Logo" width={100} height={100} />
+            <Image src="/r.png" alt="Logo" width={75} height={75} />
           </a>
         </Link>
       </div>
