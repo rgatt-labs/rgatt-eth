@@ -48,7 +48,7 @@
   .vaults:hover,
   .explorer:hover,
   .dashboard:hover {
-    color: #ffa500; /* Orange au survol */
+    color: #0064B7; /* Orange au survol */
   }
   
   .searchBarContainer {

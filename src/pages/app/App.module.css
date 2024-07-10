@@ -1,5 +1,5 @@
 .dapp {
-  background-color: #1d1815; /* Fond brun foncé */
+  background-color: #363D3F; /* Fond brun foncé */
   color: white; /* Texte blanc */
   min-height: 100vh; /* Hauteur minimale de la fenêtre d'affichage */
   display: flex;
@@ -49,7 +49,7 @@
 
 .vaultsExplorer:hover,
 .dashboard:hover {
-  color: #ffa500; /* Orange au survol */
+  color: #0064B7; /* Orange au survol */
 }
 
 .searchBar {

@@ -1,6 +1,6 @@
 /* src/pages/LandingPage/LandingPage.module.css */
 .landing {
-  background-color: #1d1815; /* Fond marron foncé */
+  background-color: #363D3F; /* Fond marron foncé */
   color: white;
   min-height: 100vh; /* Au moins la taille de la fenêtre visible */
   display: flex;
@@ -56,11 +56,11 @@
 }
 
 .nav a:hover {
-  color: #ffa500; /* Orange on hover */
+  color: #ffffff; /* Orange on hover */
 }
 
 .launchButton {
-  background-color: #d15e00; /* Orange button */
+  background-color: #13273F; /* Orange button */
   color: #1d1815; /* Dark text */
   padding: 10px 20px;
   border-radius: 5px;
@@ -68,7 +68,7 @@
 }
 
 .launchButton:hover {
-  background-color: #cc8400; /* Darker orange on hover */
+  background-color: #0064B7; /* Darker orange on hover */
 }
 
 .title {
@@ -98,7 +98,7 @@
 }
 
 .footer {
-  background-color: #1d1815; /* Fond du footer */
+  background-color: #363D3F; /* Fond du footer */
   color: white;
   text-align: center; /* Aligner le texte du footer au centre */
   padding: 20px 0;
@@ -124,7 +124,7 @@
 }
 
 .footerNav a:hover {
-  color: #ffa500; /* Orange on hover */
+  color: #0064B7; /* Orange on hover */
 }
 
 .socialIcons {
