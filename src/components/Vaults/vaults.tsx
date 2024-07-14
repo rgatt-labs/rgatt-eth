@@ -2,17 +2,20 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import styles from './Vaults.module.css';
 import Image from 'next/image';
+import { useAccount, useBalance } from 'wagmi';
 
 const Vaults: React.FC = () => {
   const router = useRouter();
+  const { address } = useAccount();
+  const { data: balanceData } = useBalance({ address });
 
   const vaultData = [
-    { title: 'Vehicle Insurance', description: 'Insurance for cars, motorcycles, and other vehicles.', tvl: '$XXX.XXX.XXX' },
-    { title: 'Property Insurance', description: 'Insurance for residential and commercial properties.', tvl: '$XXX.XXX.XXX' },
-    { title: 'Technology Item Insurance', description: 'Coverage for laptops, smartphones, and other tech items.', tvl: '$XXX.XXX.XXX' },
-    { title: 'Travel Insurance', description: 'Insurance for trips and vacations.', tvl: '$XXX.XXX.XXX' },
-    { title: 'Health Insurance', description: 'Medical insurance for individuals and families.', tvl: '$XXX.XXX.XXX' },
-    { title: 'Pet Insurance', description: 'Coverage for your pets\' health and medical needs.', tvl: '$XXX.XXX.XXX' },
+    { title: 'Vehicle Insurance', description: 'Insurance for cars, motorcycles, and other vehicles.' },
+    { title: 'Property Insurance', description: 'Insurance for residential and commercial properties.' },
+    { title: 'Technology Item Insurance', description: 'Coverage for laptops, smartphones, and other tech items.' },
+    { title: 'Travel Insurance', description: 'Insurance for trips and vacations.' },
+    { title: 'Health Insurance', description: 'Medical insurance for individuals and families.' },
+    { title: 'Pet Insurance', description: 'Coverage for your pets\' health and medical needs.' },
   ];
 
   const [selectedChain, setSelectedChain] = useState('Ethereum');
@@ -59,7 +62,11 @@ const Vaults: React.FC = () => {
                 ))}
               </div>
             </div>
-            <p>TVL {vault.tvl}</p>
+            {vault.title === 'Vehicle Insurance' ? (
+              <p>Balance: {balanceData ? `${balanceData.formatted} ${balanceData.symbol}` : 'Loading...'}</p>
+            ) : (
+              <p>TVL: $XXX.XXX.XXX</p>
+            )}
             <button 
               className={styles.simulateButton}
               onClick={() => handleSimulate(vault.title)}

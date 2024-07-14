@@ -12,12 +12,6 @@ function ConnectWallet() {
 
   return (
 	<div>
-		{account.address && (
-			<div>
-				<span>Connected with {account.address}</span><br />
-				<span>Balance: {data?.decimals} {data?.symbol}</span>
-			</div>
-		)}
 		{account.isConnected ? (
 			<button onClick={() => disconnect()}>
 				Disconnect
