@@ -1,7 +1,7 @@
 // pages/index.tsx
 import React from 'react';
 import styles from './App.module.css';
-import Vault from '@/components/Vaults/vaults';
+import Vault from '@/components/Modal/modal';
 import Header from '@/components/Header/header';
 
 const App: React.FC = () => {

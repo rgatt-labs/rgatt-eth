@@ -1,0 +1,131 @@
+.modal {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #2C2F33;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.searchBar input {
+  width: 80%;
+  padding: 15px;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #3A3F44;
+  color: #fff;
+}
+
+.vaultResults {
+  margin-bottom: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.vaultResult {
+  padding: 10px;
+  background-color: #3A3F44;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.vaultResult:hover {
+  background-color: #4B5158;
+}
+
+.selector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dropdownWrapper {
+  position: relative;
+  width: 48%;
+}
+
+.dropdownButton {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #7289DA;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #3A3F44;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+  z-index: 1;
+}
+
+.dropdownWrapper:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownItem:hover {
+  background-color: #4B5158;
+}
+
+.arrowDown {
+  margin-left: auto;
+}
+
+.amountInput input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3A3F44;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.simulateButton {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #7289DA;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.simulateButton:hover {
+  background-color: #5B6EAA;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bbb;
+}

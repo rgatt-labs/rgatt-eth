@@ -26,9 +26,6 @@ const Header: React.FC = () => {
 				<a className={styles.explorer}>Explorer</a>
 			</Link>
 			</div>
-			<div className={styles.searchBarContainer}>
-			<input type="text" placeholder="Search an Item you want to secure or find by Vault name..." className={`${styles.searchBar} ${styles.centered}`} />
-			</div>
 			<div className={styles.rightNav}>
 			<Link href="/dashboard" passHref legacyBehavior>
 				<a className={styles.dashboard}>Dashboard</a>
