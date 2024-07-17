@@ -1,193 +1,213 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useAccount, useSwitchChain, useBalance } from 'wagmi';
 import styles from './Modal.module.css';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { useAccount, useSwitchChain, useBalance, useConfig } from 'wagmi';
 
-const Vaults: React.FC = () => {
-  const router = useRouter();
-  const { address, chain } = useAccount();
-  const { switchChain, chains } = useSwitchChain();
-  const { data: balanceData } = useBalance({ address }); // Assurez-vous que useBalance retourne les données correctes
+const vaults = [
+  { name: 'Vehicle', keywords: ['moto', 'voiture', 'véhicule'] },
+  { name: 'Real Estate', keywords: ['appartement', 'maison', 'immeuble'] },
+  { name: 'Health Care', keywords: ['santé', 'médical'] },
+  { name: 'Trip', keywords: ['voyage', 'vacances'] },
+  { name: 'Life Insurance', keywords: ['vie'] },
+];
 
+const formQuestions = {
+  'Vehicle': [
+    { question: 'Type de véhicule', options: ['Moto', 'Voiture', 'Camion'] },
+    { question: 'Âge du véhicule', options: ['< 1 an', '1-5 ans', '> 5 ans'] },
+    { question: 'Utilisation', options: ['Personnelle', 'Professionnelle'] },
+  ],
+  'Real Estate': [
+    { question: 'Type de bien', options: ['Appartement', 'Maison', 'Immeuble'] },
+    { question: 'Surface', options: ['< 50m²', '50-100m²', '> 100m²'] },
+    { question: 'Localisation', options: ['Ville', 'Banlieue', 'Campagne'] },
+  ],
+  'Health Care': [
+    { question: 'Type de couverture', options: ['Basique', 'Standard', 'Premium'] },
+    { question: 'Âge', options: ['18-30', '31-50', '51+'] },
+    { question: 'Antécédents médicaux', options: ['Aucun', 'Mineurs', 'Majeurs'] },
+  ],
+  'Trip': [
+    { question: 'Durée du voyage', options: ['< 1 semaine', '1-2 semaines', '> 2 semaines'] },
+    { question: 'Destination', options: ['Europe', 'Amérique', 'Asie', 'Autre'] },
+    { question: 'Type de voyage', options: ['Loisirs', 'Affaires', 'Mixte'] },
+  ],
+  'Life Insurance': [
+    { question: 'Âge', options: ['18-30', '31-50', '51+'] },
+    { question: 'Profession', options: ['Faible risque', 'Risque moyen', 'Risque élevé'] },
+    { question: 'Montant de couverture', options: ['< 100k€', '100k-500k€', '> 500k€'] },
+  ],
+};
+
+const assets = [
+  { symbol: 'ETH', logo: 'path_to_eth_logo.png' },
+  { symbol: 'USDT', logo: 'path_to_usdt_logo.png' },
+  { symbol: 'USDC', logo: 'path_to_usdc_logo.png' },
+  { symbol: 'DAI', logo: 'path_to_dai_logo.png' },
+];
+
+const chains = [
+  { name: 'Ethereum', logo: 'path_to_ethereum_logo.png', id: 1 },
+  { name: 'Arbitrum', logo: 'path_to_arbitrum_logo.png', id: 42161 },
+  { name: 'Base', logo: 'path_to_base_logo.png', id: 8453 },
+  { name: 'Optimism', logo: 'path_to_optimism_logo.png', id: 10 },
+];
+
+const Modal: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedChain, setSelectedChain] = useState('ethereum'); // Assurez-vous que 'ethereum.png' existe dans public/icons
+  const [showVaultModal, setShowVaultModal] = useState(false);
+  const [selectedVault, setSelectedVault] = useState('');
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [answers, setAnswers] = useState<string[]>([]);
   const [selectedAsset, setSelectedAsset] = useState('ETH');
-  const [showVaults, setShowVaults] = useState(false);
-  const [selectedVault, setSelectedVault] = useState<string | null>(null); // Pour mémoriser le vault sélectionné
-  const [amount, setAmount] = useState('');
+  const [selectedChain, setSelectedChain] = useState('Ethereum');
+  const [simulatedAmount, setSimulatedAmount] = useState<number | null>(null);
+  const [isSimulating, setIsSimulating] = useState(false);
+  const [showSubscribeButton, setShowSubscribeButton] = useState(false);
 
-  const vaultData = [
-    { title: 'Vehicle Insurance', keywords: ['car', 'bike', 'vehicle'] },
-    { title: 'Property Insurance', keywords: ['house', 'property'] },
-    { title: 'Technology Item Insurance', keywords: ['laptop', 'tech'] },
-    { title: 'Travel Insurance', keywords: ['trip', 'vacation'] },
-    { title: 'Health Insurance', keywords: ['health', 'medical'] },
-    { title: 'Pet Insurance', keywords: ['pet', 'animal'] },
-  ];
+  const { address } = useAccount();
+  const { switchChain } = useSwitchChain();
+  const { data: balanceData } = useBalance({ address });
 
-  useEffect(() => {
-    if (chain && chain.name !== selectedChain) {
-      const targetChain = chains.find(c => c.name === selectedChain);
-      if (targetChain) {
-        switchChain({ chainId: targetChain.id });
-      }
-    }
-  }, [selectedChain]);
-
-  const handleSimulate = (vaultTitle: string) => {
-    setSelectedVault(vaultTitle);
-    setShowVaults(false); // Ferme la liste des résultats des Vaults
+  const handleVaultSelect = (vault: string) => {
+    setSelectedVault(vault);
+    setShowVaultModal(false);
+    setCurrentQuestionIndex(0);
+    setAnswers([]);
   };
 
-  const handleSubmit = () => {
-    // Logique pour effectuer le transfert vers le Vault sélectionné
-    console.log(`Sending ${amount} ${selectedAsset} on ${selectedChain}`);
-    // Ajoutez ici la logique pour effectuer le transfert réel
+  const handleAnswer = (answer: string) => {
+    const newAnswers = [...answers, answer];
+    setAnswers(newAnswers);
+    if (currentQuestionIndex < formQuestions[selectedVault as keyof typeof formQuestions].length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    } else {
+      // Formulaire complété
+      console.log("Formulaire complété :", newAnswers);
+    }
   };
 
-  // Fonction pour fermer la liste des résultats des Vaults
-  const closeVaults = () => {
-    setShowVaults(false);
+  const handleSimulate = () => {
+    setIsSimulating(true);
+    setTimeout(() => {
+      const amount = Math.floor(Math.random() * (100 - 50 + 1) + 50);
+      setSimulatedAmount(amount);
+      setIsSimulating(false);
+      setShowSubscribeButton(true);
+    }, 2000);
   };
 
-  // Utilisation de localStorage pour mémoriser et restaurer la sélection de Vault
-  useEffect(() => {
-    const storedVault = localStorage.getItem('selectedVault');
-    if (storedVault) {
-      setSelectedVault(storedVault);
-    }
-  }, []);
+  const handleSubscribe = () => {
+    // Logique pour lancer le smart contract de débit
+    console.log('Lancement du smart contract de débit');
+  };
 
-  useEffect(() => {
-    if (selectedVault) {
-      localStorage.setItem('selectedVault', selectedVault);
+  const handleChainChange = (chain: string) => {
+    setSelectedChain(chain);
+    const selectedChainObj = chains.find(c => c.name === chain);
+    if (selectedChainObj) {
+      switchChain?.({ chainId: selectedChainObj.id });
     }
-  }, [selectedVault]);
+  };
 
   return (
-    <div className={styles.modal}>
-      <div className={styles.header}>
-        <h2>Rgatt Simulator</h2>
-      </div>
-      <div className={styles.searchBar}>
-        <input
-          type="text"
-          placeholder="Search for vault..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          onClick={() => setShowVaults(true)}
-        />
-      </div>
-      {showVaults && (
-        <div className={styles.vaultResults}>
-          {vaultData
-            .filter(vault =>
-              vault.keywords.some(keyword =>
-                keyword.includes(searchQuery.toLowerCase())
-              )
-            )
-            .map((vault, index) => (
-              <div
-                key={index}
-                className={styles.vaultResult}
-                onClick={() => handleSimulate(vault.title)}
-              >
-                {vault.title}
-              </div>
-            ))}
-          <button className={styles.closeButton} onClick={closeVaults}>
-            Close
-          </button>
+    <div className={styles.modalOverlay}>
+      <div className={styles.modal}>
+        <h1 className={styles.title}>Rgatt Simulator</h1>
+        
+        <div className={styles.searchBarContainer}>
+          <input
+            className={styles.searchBar}
+            placeholder="Select a vault..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onFocus={() => setShowVaultModal(true)}
+          />
+          {showVaultModal && (
+            <div className={styles.vaultModal}>
+              {vaults.map((vault, index) => (
+                <div key={index} className={styles.vaultOption} onClick={() => handleVaultSelect(vault.name)}>
+                  {vault.name}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
-      )}
-      {selectedVault && (
-        <div className={styles.selectedVault}>
-          <h3>Selected Vault: {selectedVault}</h3>
-          {/* Affichez ici les détails du Vault sélectionné */}
+
+        <div className={styles.vaultInfo}>
+          <div>{selectedVault || 'Selected Vault...'}</div>
+          <div>TVL: {balanceData ? `${balanceData.formatted} ${balanceData.symbol}` : 'Loading...'}</div>
         </div>
-      )}
-      <div className={styles.selector}>
-        <div className={styles.dropdownWrapper}>
-          <button className={styles.dropdownButton}>
-            <Image
-              src={`/icons/${selectedChain.toLowerCase()}.png`}
-              alt={selectedChain}
-              width={20}
-              height={20}
-            />
-            {selectedChain}
-            <span className={styles.arrowDown}>&#9662;</span>
-          </button>
-          <div className={styles.dropdownContent}>
-            {chains.map(chain => (
-              <div
-                key={chain.id}
-                onClick={() => setSelectedChain(chain.name)}
-                className={styles.dropdownItem}
-              >
-                <Image
-                  src={`/icons/${chain.name.toLowerCase()}.png`}
-                  alt={chain.name}
-                  width={20}
-                  height={20}
-                />
-                {chain.name}
+
+        <div className={styles.formContainer}>
+          {selectedVault && currentQuestionIndex < formQuestions[selectedVault as keyof typeof formQuestions].length && (
+            <div className={styles.question}>
+              <p>{formQuestions[selectedVault as keyof typeof formQuestions][currentQuestionIndex].question}</p>
+              <div className={styles.options}>
+                {formQuestions[selectedVault as keyof typeof formQuestions][currentQuestionIndex].options.map((option, index) => (
+                  <button key={index} className={styles.optionButton} onClick={() => handleAnswer(option)}>{option}</button>
+                ))}
               </div>
-            ))}
+            </div>
+          )}
+          {selectedVault && currentQuestionIndex >= formQuestions[selectedVault as keyof typeof formQuestions].length && (
+            <div className={styles.formCompleted}>
+              Form completed! You can now proceed to simulation.
+            </div>
+          )}
+        </div>
+
+        <div className={styles.selectors}>
+          <div className={styles.customSelect}>
+            <select 
+              className={styles.assetSelector} 
+              value={selectedAsset} 
+              onChange={(e) => setSelectedAsset(e.target.value)}
+            >
+              {assets.map((asset, index) => (
+                <option key={index} value={asset.symbol}>
+                  {asset.symbol}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className={styles.customSelect}>
+            <select 
+              className={styles.chainSelector} 
+              value={selectedChain} 
+              onChange={(e) => handleChainChange(e.target.value)}
+            >
+              {chains.map((chain, index) => (
+                <option key={index} value={chain.name}>
+                  {chain.name}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
-        <div className={styles.dropdownWrapper}>
-          <button className={styles.dropdownButton}>
-            <Image
-              src={`/icons/${selectedAsset.toLowerCase()}.png`}
-              alt={selectedAsset}
-              width={20}
-              height={20}
-            />
-            {selectedAsset}
-            <span className={styles.arrowDown}>&#9662;</span>
+
+        {!simulatedAmount && (
+          <button className={styles.simulateButton} onClick={handleSimulate} disabled={isSimulating}>
+            {isSimulating ? 'Simulating...' : 'Simulate'}
           </button>
-          <div className={styles.dropdownContent}>
-            {['ETH', 'USDT', 'USDC', 'DAI'].map(asset => (
-              <div
-                key={asset}
-                onClick={() => setSelectedAsset(asset)}
-                className={styles.dropdownItem}
-              >
-                <Image
-                  src={`/icons/${asset.toLowerCase()}.png`}
-                  alt={asset}
-                  width={20}
-                  height={20}
-                />
-                {asset}
-              </div>
-            ))}
+        )}
+
+        {simulatedAmount !== null && (
+          <div className={styles.simulationResult}>
+            Here is the amount of your contract: ${simulatedAmount}
+            {showSubscribeButton && (
+              <button className={styles.subscribeButton} onClick={handleSubscribe}>
+                Subscribe
+              </button>
+            )}
           </div>
+        )}
+
+        <div className={styles.footer}>
+          Powered by Rgatt Labs
         </div>
-      </div>
-       {/* Affichage de la balance au-dessus de l'input Enter amount */}
-       <div className={styles.balance}>
-        Balance: {balanceData ? balanceData.formatted : 'Loading...'}
-      </div>
-      <br></br>
-      <div className={styles.amountInput}>
-        <input
-          type="number"
-          placeholder="Enter amount"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-        />
-      </div>
-      <button className={styles.simulateButton} onClick={handleSubmit}>
-        SEND
-      </button>
-      <div className={styles.footer}>
-        <p>Powered by Rgatt-Labs</p>
       </div>
     </div>
   );
 };
 
-export default Vaults;
+export default Modal;

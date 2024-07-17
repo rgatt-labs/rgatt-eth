@@ -1,131 +1,164 @@
 .modal {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  background-color: #2C2F33;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  color: #ffffff;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.searchBar input {
-  width: 80%;
-  padding: 15px;
-  border-radius: 7px;
-  border: none;
-  margin-bottom: 20px;
-  background-color: #3A3F44;
-  color: #fff;
-}
-
-.vaultResults {
-  margin-bottom: 20px;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.vaultResult {
-  padding: 10px;
-  background-color: #3A3F44;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.vaultResult:hover {
-  background-color: #4B5158;
-}
-
-.selector {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.dropdownWrapper {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  font-family: 'Arial', sans-serif;
   position: relative;
-  width: 48%;
 }
 
-.dropdownButton {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #7289DA;
-  color: #fff;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #3A3F44;
-  width: 100%;
-  border-radius: 5px;
-  margin-top: 5px;
-  z-index: 1;
-}
-
-.dropdownWrapper:hover .dropdownContent {
-  display: block;
-}
-
-.dropdownItem {
-  padding: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.dropdownItem:hover {
-  background-color: #4B5158;
-}
-
-.arrowDown {
-  margin-left: auto;
-}
-
-.amountInput input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #3A3F44;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.simulateButton {
-  width: 100%;
-  padding: 15px;
-  border-radius: 30px;
-  background-color: #7289DA;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+.title {
   text-align: center;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  margin-bottom: 1rem;
 }
 
-.simulateButton:hover {
-  background-color: #5B6EAA;
+.searchBarContainer {
+  position: relative;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.searchBar::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.vaultModal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.vaultOption {
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.vaultOption:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.vaultInfo {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formContainer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.question {
+  margin-bottom: 1rem;
+}
+
+.options {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.optionButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.optionButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.selectors {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.assetSelector, .chainSelector {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.simulateButton, .subscribeButton {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #0080FF, #FF1493);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.simulateButton:hover, .subscribeButton:hover {
+  background: linear-gradient(45deg, #00FFFF, #FF69B4);
+  transform: scale(1.05);
+}
+
+.simulateButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.simulationResult {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #00FFFF;
 }
 
 .footer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
   text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #bbb;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
 }
