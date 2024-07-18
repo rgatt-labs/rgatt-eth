@@ -1,55 +1,61 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAccount, useSwitchChain, useBalance } from 'wagmi';
+import { ethers } from 'ethers';
 import styles from './Modal.module.css';
 
 const vaults = [
-  { name: 'Vehicle', keywords: ['moto', 'voiture', 'véhicule'] },
-  { name: 'Real Estate', keywords: ['appartement', 'maison', 'immeuble'] },
-  { name: 'Health Care', keywords: ['santé', 'médical'] },
-  { name: 'Trip', keywords: ['voyage', 'vacances'] },
-  { name: 'Life Insurance', keywords: ['vie'] },
+  { name: 'Vehicle', keywords: ['moto', 'car', 'vehicle'] },
+  { name: 'Real Estate', keywords: ['apartment', 'house', 'building'] },
+  { name: 'Health Care', keywords: ['health', 'medical'] },
+  { name: 'Trip', keywords: ['travel', 'vacation'] },
+  { name: 'Life Insurance', keywords: ['life'] },
 ];
 
 const formQuestions = {
   'Vehicle': [
-    { question: 'Type de véhicule', options: ['Moto', 'Voiture', 'Camion'] },
-    { question: 'Âge du véhicule', options: ['< 1 an', '1-5 ans', '> 5 ans'] },
-    { question: 'Utilisation', options: ['Personnelle', 'Professionnelle'] },
+    { question: 'Type of Vehicle', options: ['Motorcycle', 'Car', 'Truck'] },
+    { question: 'Age of Vehicle', options: ['< 1 year', '1-5 years', '> 5 years'] },
+    { question: 'Usage', options: ['Personal', 'Professional'] },
   ],
   'Real Estate': [
-    { question: 'Type de bien', options: ['Appartement', 'Maison', 'Immeuble'] },
-    { question: 'Surface', options: ['< 50m²', '50-100m²', '> 100m²'] },
-    { question: 'Localisation', options: ['Ville', 'Banlieue', 'Campagne'] },
+    { question: 'Type of Property', options: ['Apartment', 'House', 'Building'] },
+    { question: 'Area', options: ['< 50m²', '50-100m²', '> 100m²'] },
+    { question: 'Location', options: ['City', 'Suburb', 'Countryside'] },
   ],
   'Health Care': [
-    { question: 'Type de couverture', options: ['Basique', 'Standard', 'Premium'] },
-    { question: 'Âge', options: ['18-30', '31-50', '51+'] },
-    { question: 'Antécédents médicaux', options: ['Aucun', 'Mineurs', 'Majeurs'] },
+    { question: 'Type of Coverage', options: ['Basic', 'Standard', 'Premium'] },
+    { question: 'Age', options: ['18-30', '31-50', '51+'] },
+    { question: 'Medical History', options: ['None', 'Minor', 'Major'] },
   ],
   'Trip': [
-    { question: 'Durée du voyage', options: ['< 1 semaine', '1-2 semaines', '> 2 semaines'] },
-    { question: 'Destination', options: ['Europe', 'Amérique', 'Asie', 'Autre'] },
-    { question: 'Type de voyage', options: ['Loisirs', 'Affaires', 'Mixte'] },
+    { question: 'Duration of Trip', options: ['< 1 week', '1-2 weeks', '> 2 weeks'] },
+    { question: 'Destination', options: ['Europe', 'America', 'Asia', 'Other'] },
+    { question: 'Type of Trip', options: ['Leisure', 'Business', 'Mixed'] },
   ],
   'Life Insurance': [
-    { question: 'Âge', options: ['18-30', '31-50', '51+'] },
-    { question: 'Profession', options: ['Faible risque', 'Risque moyen', 'Risque élevé'] },
-    { question: 'Montant de couverture', options: ['< 100k€', '100k-500k€', '> 500k€'] },
+    { question: 'Age', options: ['18-30', '31-50', '51+'] },
+    { question: 'Profession', options: ['Low risk', 'Medium risk', 'High risk'] },
+    { question: 'Coverage Amount', options: ['< 100k', '100k-500k', '> 500k'] },
   ],
 };
 
 const assets = [
-  { symbol: 'ETH', logo: 'path_to_eth_logo.png' },
-  { symbol: 'USDT', logo: 'path_to_usdt_logo.png' },
-  { symbol: 'USDC', logo: 'path_to_usdc_logo.png' },
-  { symbol: 'DAI', logo: 'path_to_dai_logo.png' },
+  { symbol: 'ETH', logo: '/icons/eth.png' },
+  { symbol: 'USDT', logo: '/icons/usdt.png' },
+  { symbol: 'USDC', logo: '/icons/usdc.png' },
+  { symbol: 'DAI', logo: '/icons/dai.png' },
 ];
 
 const chains = [
-  { name: 'Ethereum', logo: 'path_to_ethereum_logo.png', id: 1 },
-  { name: 'Arbitrum', logo: 'path_to_arbitrum_logo.png', id: 42161 },
-  { name: 'Base', logo: 'path_to_base_logo.png', id: 8453 },
-  { name: 'Optimism', logo: 'path_to_optimism_logo.png', id: 10 },
+  { name: 'Ethereum', logo: '/icons/mainnet.png', id: 1 },
+  { name: 'Arbitrum', logo: '/icons/arbitrum.png', id: 42161 },
+  { name: 'Base', logo: '/icons/base.png', id: 8453 },
+  { name: 'Optimism', logo: '/icons/optimism.png', id: 10 },
+];
+
+const CONTRACT_ADDRESS = "YOUR_CONTRACT_ADDRESS_HERE";
+const CONTRACT_ABI = [
+  "function subscribe(address user, uint256 amount) external",
 ];
 
 const Modal: React.FC = () => {
@@ -68,38 +74,55 @@ const Modal: React.FC = () => {
   const { switchChain } = useSwitchChain();
   const { data: balanceData } = useBalance({ address });
 
+  useEffect(() => {
+    if (selectedVault) {
+      setCurrentQuestionIndex(0);
+      setAnswers([]);
+      setShowSubscribeButton(false);
+    }
+  }, [selectedVault]);
+
   const handleVaultSelect = (vault: string) => {
     setSelectedVault(vault);
     setShowVaultModal(false);
-    setCurrentQuestionIndex(0);
-    setAnswers([]);
   };
 
   const handleAnswer = (answer: string) => {
-    const newAnswers = [...answers, answer];
+    const newAnswers = [...answers];
+    newAnswers[currentQuestionIndex] = answer;
     setAnswers(newAnswers);
+
     if (currentQuestionIndex < formQuestions[selectedVault as keyof typeof formQuestions].length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      // Formulaire complété
-      console.log("Formulaire complété :", newAnswers);
+      setShowSubscribeButton(true);
     }
   };
 
   const handleSimulate = () => {
     setIsSimulating(true);
     setTimeout(() => {
-      const amount = Math.floor(Math.random() * (100 - 50 + 1) + 50);
-      setSimulatedAmount(amount);
+      const amount = Math.random() * (0.009 - 0.001) + 0.001;
+      setSimulatedAmount(parseFloat(amount.toFixed(3))); // Adjusted for ETH and limited to 3 decimal places
       setIsSimulating(false);
-      setShowSubscribeButton(true);
     }, 2000);
   };
 
-  const handleSubscribe = () => {
-    // Logique pour lancer le smart contract de débit
-    console.log('Lancement du smart contract de débit');
-  };
+  // const handleSubscribe = async () => {
+  //   if (!address || !simulatedAmount) return;
+
+  //   try {
+  //     const provider = new ethers.providers.Web3Provider(window.ethereum);
+  //     const signer = provider.getSigner();
+  //     const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer);
+  //     const tx = await contract.subscribe(address, ethers.utils.parseEther(simulatedAmount.toString()));
+  //     console.log('Transaction sent:', tx.hash);
+  //     await tx.wait();
+  //     console.log('Transaction confirmed:', tx.hash);
+  //   } catch (error) {
+  //     console.error('Error subscribing:', error);
+  //   }
+  // };
 
   const handleChainChange = (chain: string) => {
     setSelectedChain(chain);
@@ -165,6 +188,7 @@ const Modal: React.FC = () => {
             >
               {assets.map((asset, index) => (
                 <option key={index} value={asset.symbol}>
+                  <img src={asset.logo} alt={asset.symbol} className={styles.logo} />
                   {asset.symbol}
                 </option>
               ))}
@@ -178,6 +202,7 @@ const Modal: React.FC = () => {
             >
               {chains.map((chain, index) => (
                 <option key={index} value={chain.name}>
+                  <img src={chain.logo} alt={chain.name} className={styles.logo} />
                   {chain.name}
                 </option>
               ))}
@@ -193,9 +218,10 @@ const Modal: React.FC = () => {
 
         {simulatedAmount !== null && (
           <div className={styles.simulationResult}>
-            Here is the amount of your contract: ${simulatedAmount}
+            Here is the amount of your contract: {simulatedAmount} ETH
             {showSubscribeButton && (
-              <button className={styles.subscribeButton} onClick={handleSubscribe}>
+              <button className={styles.subscribeButton}> 
+              {/* // onClick={handleSubscribe} */}
                 Subscribe
               </button>
             )}
