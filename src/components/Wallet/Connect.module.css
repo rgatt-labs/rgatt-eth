@@ -1,0 +1,55 @@
+.wallet-connect {
+    position: relative;
+  }
+  
+  .wallet-button, .connect-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .chain-selector {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .chain-option {
+    padding: 5px 10px;
+    margin: 2px 0;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .chain-option.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .disconnect-button, .wallet-option {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 2px 0;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .disconnect-button:hover, .wallet-option:hover {
+    background-color: #e0e0e0;
+  }
