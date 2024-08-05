@@ -5,7 +5,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './header.module.css';
-import ConnectWallet from '../Wallet/Connect';
+import ConnectWallet from './Wallet/Connect';
 
 const Header: React.FC = () => {
   return (

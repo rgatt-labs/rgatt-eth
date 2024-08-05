@@ -1,8 +1,8 @@
 // pages/index.tsx
 import React from 'react';
 import styles from './App.module.css';
-import Vault from '@/components/Modal/modal';
-import Header from '@/components/Header/header';
+import Vault from '@/components/app/ContractSimulator/Modal/modal';
+import Header from '@/components/app/AppHeader/header';
 
 const App: React.FC = () => {
   return (
