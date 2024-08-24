@@ -1,11 +1,10 @@
 .dapp {
-  background-color: #363D3F; /* Fond brun foncé */
-  color: white; /* Texte blanc */
-  min-height: 100vh; /* Hauteur minimale de la fenêtre d'affichage */
+  background-color: #363D3F;
+  color: white;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
 }
 
 .container {
@@ -14,96 +13,19 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-  box-sizing: border-box;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer; /* Curseur pointer pour indiquer que le logo est cliquable */
-}
-
-.nav {
-  align-items: center;
-}
-
-.vaults,
-.explorer,
-.dashboard {
-  margin-right: 20px;
-  cursor: pointer;
-  transition: color 0.3s;
-  color: white; /* Couleur de texte par défaut */
-  text-decoration: none; /* Enlever le soulignement par défaut */
-}
-
-.vaultsExplorer:hover,
-.dashboard:hover {
-  color: #0064B7; /* Orange au survol */
-}
-
-.searchBar {
-  flex: 1; /* Permet à la barre de recherche de prendre tout l'espace disponible */
-  padding: 10px;
-  padding-right: 200px;
-  border: 1px solid #444;
-  border-radius: 15px;
-  background-color: #333;
-  color: white;
-  outline: none;
-}
-
-.searchBar::placeholder {
-  color: #bbb;
+  min-height: 75vh;
 }
 
 .main {
-  flex: 1;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-
-.connectButton {
-  padding: 10px 20px;
-  background-color: #ffa500;
-  color: #1d1815;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.connectButton:hover {
-  background-color: #cc8400;
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
-  }
-
-  .vaultsExplorer,
-  .dashboard {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .searchBar {
-    width: 100%;
-    margin-bottom: 10px;
   }
 }

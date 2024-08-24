@@ -1,236 +1,152 @@
-import React, { useState, useEffect } from 'react';
-import { useAccount, useSwitchChain, useBalance } from 'wagmi';
-import { ethers } from 'ethers';
+import React, { useState } from 'react';
+import axios from 'axios';
 import styles from './Modal.module.css';
 
-const vaults = [
-  { name: 'Vehicle', keywords: ['moto', 'car', 'vehicle'] },
-  { name: 'Real Estate', keywords: ['apartment', 'house', 'building'] },
-  { name: 'Health Care', keywords: ['health', 'medical'] },
-  { name: 'Trip', keywords: ['travel', 'vacation'] },
-  { name: 'Life Insurance', keywords: ['life'] },
-];
+const vaults = ['Real Estate', 'Vehicle', 'Health'];
 
-const formQuestions = {
-  'Vehicle': [
-    { question: 'Type of Vehicle', options: ['Motorcycle', 'Car', 'Truck'] },
-    { question: 'Age of Vehicle', options: ['< 1 year', '1-5 years', '> 5 years'] },
-    { question: 'Usage', options: ['Personal', 'Professional'] },
-  ],
+const questionsByVault: { [key: string]: { question: string; options: (string | number)[] }[] } = {
   'Real Estate': [
-    { question: 'Type of Property', options: ['Apartment', 'House', 'Building'] },
-    { question: 'Area', options: ['< 50m²', '50-100m²', '> 100m²'] },
-    { question: 'Location', options: ['City', 'Suburb', 'Countryside'] },
+    { question: 'What type of property are you insuring?', options: ['Primary Residence', 'Secondary Residence', 'Rental Apartment'] },
+    { question: 'What type of property?', options: ['Apartment', 'House'] },
+    { question: 'How many rooms?', options: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+    { question: 'In which country is the property located?', options: ['France', 'United Kingdom', 'United States', 'Australia'] },
+    { question: 'In which city is the property located?', options: ['Paris', 'Lyon', 'Marseille', 'London', 'Manchester', 'Birmingham', 'New York', 'Los Angeles', 'Chicago', 'Sydney', 'Melbourne', 'Brisbane'] }
   ],
-  'Health Care': [
-    { question: 'Type of Coverage', options: ['Basic', 'Standard', 'Premium'] },
-    { question: 'Age', options: ['18-30', '31-50', '51+'] },
-    { question: 'Medical History', options: ['None', 'Minor', 'Major'] },
+  'Vehicle': [
+    { question: 'What type of vehicle are you insuring?', options: ['Car', 'Motorcycle', 'Truck'] },
+    { question: 'What is the vehicle’s use?', options: ['Personal', 'Commercial'] },
+    { question: 'What is the vehicle’s registration country?', options: ['France', 'United Kingdom', 'United States', 'Australia'] },
+    { question: 'In which city is the vehicle registered?', options: ['Paris', 'Lyon', 'Marseille', 'London', 'Manchester', 'Birmingham', 'New York', 'Los Angeles', 'Chicago', 'Sydney', 'Melbourne', 'Brisbane'] },
+    { question: 'What is the type of coverage?', options: ['Comprehensive', 'Third-Party', 'Collision'] }
   ],
-  'Trip': [
-    { question: 'Duration of Trip', options: ['< 1 week', '1-2 weeks', '> 2 weeks'] },
-    { question: 'Destination', options: ['Europe', 'America', 'Asia', 'Other'] },
-    { question: 'Type of Trip', options: ['Leisure', 'Business', 'Mixed'] },
-  ],
-  'Life Insurance': [
-    { question: 'Age', options: ['18-30', '31-50', '51+'] },
-    { question: 'Profession', options: ['Low risk', 'Medium risk', 'High risk'] },
-    { question: 'Coverage Amount', options: ['< 100k', '100k-500k', '> 500k'] },
-  ],
+  'Health': [
+    { question: 'What type of health insurance are you looking for?', options: ['Individual Health Insurance', 'Family Health Insurance', 'Group Health Insurance'] },
+    { question: 'What level of coverage are you interested in?', options: ['Basic Coverage', 'Comprehensive Coverage', 'Premium Coverage'] },
+    { question: 'Do you have any pre-existing conditions?', options: ['Yes', 'No'] },
+    { question: 'Are you currently undergoing any ongoing treatments?', options: ['Yes', 'No'] },
+    { question: 'Have you had any recent surgeries?', options: ['Yes', 'No'] },
+    { question: 'Are you interested in additional coverage for?', options: ['Dental', 'Vision', 'Maternity', 'Mental Health', 'None'] }
+  ]
 };
 
-const assets = [
-  { symbol: 'ETH', logo: '/icons/eth.png' },
-  { symbol: 'USDT', logo: '/icons/usdt.png' },
-  { symbol: 'USDC', logo: '/icons/usdc.png' },
-  { symbol: 'DAI', logo: '/icons/dai.png' },
-];
-
-const chains = [
-  { name: 'Ethereum', logo: '/icons/mainnet.png', id: 1 },
-  { name: 'Arbitrum', logo: '/icons/arbitrum.png', id: 42161 },
-  { name: 'Base', logo: '/icons/base.png', id: 8453 },
-  { name: 'Optimism', logo: '/icons/optimism.png', id: 10 },
-];
-
-const CONTRACT_ADDRESS = "YOUR_CONTRACT_ADDRESS_HERE";
-const CONTRACT_ABI = [
-  "function subscribe(address user, uint256 amount) external",
-];
-
 const Modal: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [showVaultModal, setShowVaultModal] = useState(false);
   const [selectedVault, setSelectedVault] = useState('');
+  const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
-  const [selectedAsset, setSelectedAsset] = useState('ETH');
-  const [selectedChain, setSelectedChain] = useState('Ethereum');
   const [simulatedAmount, setSimulatedAmount] = useState<number | null>(null);
+  const [showSummary, setShowSummary] = useState(false);
   const [isSimulating, setIsSimulating] = useState(false);
-  const [showSubscribeButton, setShowSubscribeButton] = useState(false);
-
-  const { address } = useAccount();
-  const { switchChain } = useSwitchChain();
-  const { data: balanceData } = useBalance({ address });
-
-  useEffect(() => {
-    if (selectedVault) {
-      setCurrentQuestionIndex(0);
-      setAnswers([]);
-      setShowSubscribeButton(false);
-    }
-  }, [selectedVault]);
 
   const handleVaultSelect = (vault: string) => {
     setSelectedVault(vault);
-    setShowVaultModal(false);
+    setQuestions(questionsByVault[vault] || []);
+    setCurrentQuestionIndex(0);
+    setAnswers([]);
+    setSimulatedAmount(null);
+    setShowSummary(false);
   };
 
-  const handleAnswer = (answer: string) => {
-    const newAnswers = [...answers];
-    newAnswers[currentQuestionIndex] = answer;
+  const handleAnswerSelect = (answer: string) => {
+    const newAnswers = [...answers, answer];
     setAnswers(newAnswers);
-
-    if (currentQuestionIndex < formQuestions[selectedVault as keyof typeof formQuestions].length - 1) {
+    if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      setShowSubscribeButton(true);
+      setShowSummary(true);
     }
   };
 
-  const handleSimulate = () => {
+  const handleSimulate = async () => {
     setIsSimulating(true);
-    setTimeout(() => {
-      const amount = Math.random() * (0.009 - 0.001) + 0.001;
-      setSimulatedAmount(parseFloat(amount.toFixed(3))); // Adjusted for ETH and limited to 3 decimal places
-      setIsSimulating(false);
-    }, 2000);
+    try {
+      const response = await axios.post('/api/simulate', {
+        vault: selectedVault,
+        answers: answers
+      });
+      setSimulatedAmount(response.data.amount);
+    } catch (error) {
+      console.error('Error during simulation:', error);
+      setSimulatedAmount(null);
+    }
+    setIsSimulating(false);
   };
 
-  // const handleSubscribe = async () => {
-  //   if (!address || !simulatedAmount) return;
-
-  //   try {
-  //     const provider = new ethers.providers.Web3Provider(window.ethereum);
-  //     const signer = provider.getSigner();
-  //     const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer);
-  //     const tx = await contract.subscribe(address, ethers.utils.parseEther(simulatedAmount.toString()));
-  //     console.log('Transaction sent:', tx.hash);
-  //     await tx.wait();
-  //     console.log('Transaction confirmed:', tx.hash);
-  //   } catch (error) {
-  //     console.error('Error subscribing:', error);
-  //   }
-  // };
-
-  const handleChainChange = (chain: string) => {
-    setSelectedChain(chain);
-    const selectedChainObj = chains.find(c => c.name === chain);
-    if (selectedChainObj) {
-      switchChain?.({ chainId: selectedChainObj.id });
-    }
+  const renderSummary = () => {
+    return (
+      <div className={styles.summary}>
+        <h2>Summary of Your Answers</h2>
+        {questions.map((q, index) => (
+          <div key={index} className={styles.summaryItem}>
+            <p><strong>{q.question}</strong></p>
+            <p>{answers[index]}</p>
+          </div>
+        ))}
+      </div>
+    );
   };
 
   return (
-    <div className={styles.modalOverlay}>
-      <div className={styles.modal}>
-        <h1 className={styles.title}>Rgatt Simulator</h1>
-        
-        <div className={styles.searchBarContainer}>
-          <input
-            className={styles.searchBar}
-            placeholder="Select a vault..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onFocus={() => setShowVaultModal(true)}
-          />
-          {showVaultModal && (
-            <div className={styles.vaultModal}>
+    <div className={styles.modalContainer}>
+      <div className={styles.modalContent}>
+        <h1 className={styles.title}>Simulator</h1>
+
+        {!selectedVault && (
+          <div className={styles.vaultSelector}>
+            <select
+              value={selectedVault}
+              onChange={(e) => handleVaultSelect(e.target.value)}
+              className={styles.select}
+            >
+              <option value="">Select a Vault</option>
               {vaults.map((vault, index) => (
-                <div key={index} className={styles.vaultOption} onClick={() => handleVaultSelect(vault.name)}>
-                  {vault.name}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-
-        <div className={styles.vaultInfo}>
-          <div>{selectedVault || 'Selected Vault...'}</div>
-          <div>TVL: {balanceData ? `${balanceData.formatted} ${balanceData.symbol}` : 'Loading...'}</div>
-        </div>
-
-        <div className={styles.formContainer}>
-          {selectedVault && currentQuestionIndex < formQuestions[selectedVault as keyof typeof formQuestions].length && (
-            <div className={styles.question}>
-              <p>{formQuestions[selectedVault as keyof typeof formQuestions][currentQuestionIndex].question}</p>
-              <div className={styles.options}>
-                {formQuestions[selectedVault as keyof typeof formQuestions][currentQuestionIndex].options.map((option, index) => (
-                  <button key={index} className={styles.optionButton} onClick={() => handleAnswer(option)}>{option}</button>
-                ))}
-              </div>
-            </div>
-          )}
-          {selectedVault && currentQuestionIndex >= formQuestions[selectedVault as keyof typeof formQuestions].length && (
-            <div className={styles.formCompleted}>
-              Form completed! You can now proceed to simulation.
-            </div>
-          )}
-        </div>
-
-        <div className={styles.selectors}>
-          <div className={styles.customSelect}>
-            <select 
-              className={styles.assetSelector} 
-              value={selectedAsset} 
-              onChange={(e) => setSelectedAsset(e.target.value)}
-            >
-              {assets.map((asset, index) => (
-                <option key={index} value={asset.symbol}>
-                  <img src={asset.logo} alt={asset.symbol} className={styles.logo} />
-                  {asset.symbol}
-                </option>
+                <option key={index} value={vault}>{vault}</option>
               ))}
             </select>
           </div>
-          <div className={styles.customSelect}>
-            <select 
-              className={styles.chainSelector} 
-              value={selectedChain} 
-              onChange={(e) => handleChainChange(e.target.value)}
-            >
-              {chains.map((chain, index) => (
-                <option key={index} value={chain.name}>
-                  <img src={chain.logo} alt={chain.name} className={styles.logo} />
-                  {chain.name}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        {!simulatedAmount && (
-          <button className={styles.simulateButton} onClick={handleSimulate} disabled={isSimulating}>
-            {isSimulating ? 'Simulating...' : 'Simulate'}
-          </button>
         )}
 
-        {simulatedAmount !== null && (
-          <div className={styles.simulationResult}>
-            Here is the amount of your contract: {simulatedAmount} ETH
-            {showSubscribeButton && (
-              <button className={styles.subscribeButton}> 
-              {/* // onClick={handleSubscribe} */}
-                Subscribe
+        {selectedVault && !showSummary && (
+          <div className={styles.questionContainer}>
+            {currentQuestionIndex < questions.length ? (
+              <>
+                <p>{questions[currentQuestionIndex].question}</p>
+                <div className={styles.options}>
+                  {questions[currentQuestionIndex].options.map((option: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<React.AwaitedReactNode> | null | undefined, index: React.Key | null | undefined) => (
+                    <button key={index} onClick={() => handleAnswerSelect(option as string)} className={styles.optionButton}>
+                      {option}
+                    </button>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <button className={styles.simulateButton} onClick={handleSimulate} disabled={isSimulating}>
+                {isSimulating ? 'Simulating...' : 'Confirm and Simulate'}
               </button>
             )}
           </div>
         )}
 
-        <div className={styles.footer}>
-          Powered by Rgatt Labs
-        </div>
+        {showSummary && (
+          <div className={styles.summaryContainer}>
+            {renderSummary()}
+            {!isSimulating && !simulatedAmount && (
+              <button className={styles.simulateButton} onClick={handleSimulate} disabled={isSimulating}>
+                {isSimulating ? 'Simulating...' : 'Confirm and Simulate'}
+              </button>
+            )}
+          </div>
+        )}
+
+        {simulatedAmount !== null && (
+          <div className={styles.simulationResult}>
+            Estimated contract amount: ${simulatedAmount.toFixed(2)}
+          </div>
+        )}
+      </div>
+
+      <div className={styles.footer}>
+        Powered by Rgatt
       </div>
     </div>
   );
