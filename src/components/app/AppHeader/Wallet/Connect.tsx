@@ -1,6 +1,3 @@
-// ConnectButton.tsx
-"use client";
-
 import { Connector, useAccount, useBalance, useConnect, useDisconnect, useSwitchChain } from 'wagmi'
 import * as React from 'react'
 import styles from './Connect.module.css'
@@ -57,15 +54,26 @@ function ConnectWallet() {
       ) : (
         <div className={styles.connectState}>
           <button onClick={() => setIsOpen(!isOpen)} className={styles.connectButton}>
-            Connect Wallet
+            Connect
           </button>
           {isOpen && (
-            <div className={styles.dropdown}>
-              {connectors.map((connector) => (
-                <button key={connector.id} onClick={() => handleConnect(connector)} className={styles.walletOption}>
-                  {connector.name}
-                </button>
-              ))}
+            <div className={styles.modalOverlay}>
+              <div className={styles.modalContent}>
+                <button onClick={() => setIsOpen(false)} className={styles.closeButton}>X</button>
+                <h2>Log in or sign up</h2>
+                {connectors.map((connector) => (
+                  <button key={connector.id} onClick={() => handleConnect(connector)} className={styles.walletOption}>
+                    {connector.name}
+                  </button>
+                ))}
+                <div className={styles.extraOptions}>
+                  <button className={styles.otherWallets}>Other wallets</button>
+                  <button className={styles.continueWithEmail}>Continue with email</button>
+                </div>
+                <p className={styles.terms}>
+                  By logging in I agree to the <a href="#">Terms & Privacy Policy</a>.
+                </p>
+              </div>
             </div>
           )}
         </div>

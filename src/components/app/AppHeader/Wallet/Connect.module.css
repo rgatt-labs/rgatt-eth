@@ -1,55 +1,102 @@
-.walletConnect {
-  position: relative;
-}
-
-.walletButton, .connectButton {
-  padding: 10px 15px;
+.connectButton, .walletButton {
+  padding: 8px 18px;
   border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #0064B7;
+  color: #E9E9E9;
   cursor: pointer;
-}
-
-.dropdown {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: 500;
   border-radius: 5px;
-  padding: 10px;
-  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
 }
 
-.chainSelector {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.chainOption {
-  padding: 5px 10px;
-  margin: 2px 0;
-  border: none;
-  background-color: #f0f0f0;
-  cursor: pointer;
-}
-
-.chainOption.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.disconnectButton, .walletOption {
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 5px 10px;
-  margin: 2px 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Garder un léger assombrissement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px); /* Ajouter l'effet de flou */
+}
+
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.modalContent h2 {
+  color: #000000; /* Texte en noir pour le titre */
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
   border: none;
-  background-color: #f0f0f0;
+  font-size: 18px;
   cursor: pointer;
 }
 
-.disconnectButton:hover, .walletOption:hover {
+.walletOption {
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #000000; /* Texte en noir */
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.walletOption:hover {
   background-color: #e0e0e0;
 }
+
+.extraOptions {
+  margin-top: 20px;
+}
+
+.otherWallets, .continueWithEmail {
+  padding: 12px 20px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  color: #000000; /* Texte en noir */
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.otherWallets:hover, .continueWithEmail:hover {
+  background-color: #e0e0e0;
+}
+
+.terms {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #000000;
+}
+
+.terms a {
+  color: #0064B7;
+  text-decoration: none;
+}
+

@@ -89,7 +89,7 @@ const Modal: React.FC = () => {
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modalContent}>
-        <h1 className={styles.title}>Simulator</h1>
+        <h1 className={styles.title}>ENLIST</h1>
 
         {!selectedVault && (
           <div className={styles.vaultSelector}>

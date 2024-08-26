@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
   }
   
   .logo {
@@ -39,28 +40,14 @@
   .dashboard {
     margin-right: 20px;
     cursor: pointer;
+    font-weight: 500;
     transition: color 0.3s;
-    color: white; /* Couleur de texte par défaut */
-    text-decoration: none; /* Enlever le soulignement par défaut */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
   }
   
   .vaults:hover,
   .explorer:hover,
   .dashboard:hover {
-    color: #0064B7; /* Orange au survol */
+    color: #0064B7;
   }
-  
-  .connectButton {
-    padding: 10px 20px;
-    background-color: #ffa500;
-    color: #1d1815;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  .connectButton:hover {
-    background-color: #cc8400;
-  }
-  

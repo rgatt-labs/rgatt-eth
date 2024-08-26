@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link href="/" passHref legacyBehavior>
+        <Link href="/app" passHref legacyBehavior>
           <a>
             <Image src="/r.png" alt="Logo" width={75} height={75} />
           </a>
