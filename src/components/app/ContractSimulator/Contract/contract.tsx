@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import styles from './Modal.module.css';
+import styles from './Contract.module.css';
 
 const vaults = ['Real Estate', 'Vehicle', 'Health'];
 
@@ -146,7 +146,7 @@ const Modal: React.FC = () => {
       </div>
 
       <div className={styles.footer}>
-        Powered by Rgatt
+        Powered by Rgatt Labs
       </div>
     </div>
   );

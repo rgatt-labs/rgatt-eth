@@ -1,53 +1,51 @@
 /* header.module.css */
 .header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-  }
-  
-  .nav {
-    display: flex;
-    align-items: center;
-    flex: 1; /* Permet au nav de prendre tout l'espace disponible */
-  }
-  
-  .leftNav {
-    flex: 1; /* Prendra le tiers gauche du nav */
-  }
-  
-  .rightNav {
-    display: flex;
-    align-items: center;
-  }
-  .vaults{
-    padding-left: 25px;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 20px; /* Ajoutez un padding pour un peu d'espace sur les côtés */
+  box-sizing: border-box; /* Assurez-vous que le padding est pris en compte dans la largeur totale */
+}
 
-  .dashboard{
-    padding-right: 25px;
-  }
-  .vaults,
-  .explorer,
-  .dashboard {
-    margin-right: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: color 0.3s;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  
-  .vaults:hover,
-  .explorer:hover,
-  .dashboard:hover {
-    color: #0064B7;
-  }
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Permet au nav de prendre tout l'espace disponible */
+  justify-content: space-between; /* Espace entre les éléments de gauche et le composant ConnectWallet */
+}
+
+.leftNav {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Prend tout l'espace disponible sur la gauche */
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligne ConnectWallet à droite */
+}
+
+.vaults, .explorer, .dashboard {
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.vaults:hover,
+.explorer:hover,
+.dashboard:hover {
+  color: #0064B7;
+}

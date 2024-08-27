@@ -25,11 +25,11 @@ const Header: React.FC = () => {
           <Link href="/explorer" passHref legacyBehavior>
             <a className={styles.explorer}>Explorer</a>
           </Link>
-        </div>
-        <div className={styles.rightNav}>
           <Link href="/dashboard" passHref legacyBehavior>
             <a className={styles.dashboard}>Dashboard</a>
           </Link>
+        </div>
+        <div className={styles.rightNav}>
           <ConnectWallet />
         </div>
       </nav>
