@@ -38,14 +38,6 @@ function ConnectWallet() {
     setIsWalletOpen(false);
   };
 
-  const handleDisconnect = () => {
-    setIsDisconnectSlideVisible(true);
-    setTimeout(() => {
-      disconnect();
-      setIsDisconnectSlideVisible(false);
-    }, 300); // Durée de l'animation de slide
-  };
-
   const formattedAddress = address
     ? `${address.slice(0, 4)}...${address.slice(-2)}`
     : '';
@@ -138,17 +130,6 @@ function ConnectWallet() {
               By logging in I agree to the <a href="#">Terms & Privacy Policy</a>.
             </p>
           </div>
-        </div>
-      )}
-
-      {isDisconnectSlideVisible && (
-        <div className={`${styles.disconnectSlide} ${isDisconnectSlideVisible ? styles.show : ''}`} ref={disconnectRef}>
-          <button
-            onClick={handleDisconnect}
-            className={styles.disconnectButton}
-          >
-            Disconnect
-          </button>
         </div>
       )}
     </div>
