@@ -1,0 +1,18 @@
+/* FormContainer.module.css */
+
+.formWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    height: 70vh;
+    margin-left: 20px;
+    padding: 24px;
+    background: #1c1c1c;
+    border-radius: 15px;
+    color: #fff;
+    overflow: hidden;
+    opacity: 0.95;
+    border: 1px solid #fff;
+  }
+  

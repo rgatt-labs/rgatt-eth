@@ -1,0 +1,136 @@
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popupContent {
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 900px;
+    height: 75vh; /* Réduction de la hauteur pour éviter que la popup touche les bords */
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #757575;
+    transition: color 0.3s ease;
+  }
+  
+  .closeButton:hover {
+    color: #333;
+  }
+  
+  .popupContent h2 {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .searchInput {
+    width: 100%;
+    max-width: 600px; /* Taille fixe pour la barre de recherche */
+    padding: 14px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    align-self: center; /* Centrer la barre de recherche */
+  }
+  
+  .contractList {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+    align-items: center;
+  }
+  
+  .contractItem {
+    width: calc(40% - 10px);
+    min-width: 280px; 
+    height: 200px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contractItem:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contractItem h3 {
+    font-size: 18px;
+    margin: 0 0 12px;
+    color: #333;
+  }
+  
+  .contractItem p {
+    font-size: 15px;
+    color: #555;
+    margin: 0 0 12px;
+    flex-grow: 1;
+  }
+  
+  .contractItem button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end; /* Aligner le bouton à droite */
+  }
+  
+  .contractItem button:hover {
+    background-color: #1765cc;
+  }
+  
+  .popupContent::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .popupContent::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+  
+  .popupContent::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    border-radius: 5px;
+  }
+  
+  .popupContent::-webkit-scrollbar-thumb:hover {
+    background: #909090;
+  }
+  

@@ -1,12 +1,19 @@
-/* header.module.css */
 .header {
   width: 100%;
+  background-color: #E9E9E9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerContent {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
-  padding: 0 20px; /* Ajoutez un padding pour un peu d'espace sur les côtés */
-  box-sizing: border-box; /* Assurez-vous que le padding est pris en compte dans la largeur totale */
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -19,20 +26,20 @@
 .nav {
   display: flex;
   align-items: center;
-  flex: 1; /* Permet au nav de prendre tout l'espace disponible */
-  justify-content: space-between; /* Espace entre les éléments de gauche et le composant ConnectWallet */
+  flex: 1;
+  justify-content: space-between;
 }
 
 .leftNav {
   display: flex;
   align-items: center;
-  flex: 1; /* Prend tout l'espace disponible sur la gauche */
+  flex: 1;
 }
 
 .rightNav {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Aligne ConnectWallet à droite */
+  justify-content: flex-end;
 }
 
 .vaults, .explorer, .dashboard {
@@ -48,4 +55,28 @@
 .explorer:hover,
 .dashboard:hover {
   color: #0064B7;
+}
+
+.headerDivider {
+  height: 1px;
+  background-color: black;
+  width: 100%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+  
+  .headerContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .rightNav {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
