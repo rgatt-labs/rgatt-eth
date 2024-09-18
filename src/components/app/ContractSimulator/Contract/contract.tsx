@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import styles from './Contract.module.css';
-import ContractPopup from '../../ContractPopup/ContractPopup';
-import VehicleForm from '../../Forms/VehicleForm';
-import RealEstateForm from '../../Forms/RealEstateForm';
-import HealthForm from '../../Forms/HealthForm';
+import React, { useState } from "react";
+import styles from "./Contract.module.css";
+import ContractPopup from "../../ContractPopup/ContractPopup";
+import VehicleForm from "../../Forms/VehicleForm";
+import RealEstateForm from "../../Forms/RealEstateForm";
+import HealthForm from "../../Forms/HealthForm";
 
 const Contract = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -18,11 +18,11 @@ const Contract = () => {
 
   const renderForm = () => {
     switch (selectedContract?.name) {
-      case 'Vehicle':
+      case "Vehicle":
         return <VehicleForm />;
-      case 'Real Estate':
+      case "Real Estate":
         return <RealEstateForm />;
-      case 'Health':
+      case "Health":
         return <HealthForm />;
       default:
         return null;
@@ -33,9 +33,7 @@ const Contract = () => {
     <div className={styles.pageContainer}>
       <div className={styles.leftContent}>
         {selectedContract ? (
-          <div className={styles.formContainer}>
-            {renderForm()}
-          </div>
+          <div className={styles.formContainer}>{renderForm()}</div>
         ) : (
           <>
             <h1 className={styles.mainTitle}>Welcome to a new era</h1>
@@ -47,16 +45,24 @@ const Contract = () => {
               Digital Assurance Protocol
             </h2>
             <p className={styles.getStarted}>Get started with our simulator</p>
-            <button className={styles.createContractButton} onClick={handleOpenPopup}>+ Create your contract</button>
+            <button
+              className={styles.createContractButton}
+              onClick={handleOpenPopup}
+            >
+              + Create your contract
+            </button>
           </>
         )}
       </div>
       <div className={styles.modalContainer}>
         <div className={styles.modalContent}>
           <h1 className={styles.title}>Simulation Details</h1>
-          <button className={styles.button} onClick={handleOpenPopup}>+ Create your contract</button>
+          <button className={styles.button} onClick={handleOpenPopup}>
+            + Create your contract
+          </button>
           <p className={styles.description}>
-            Details of contract added to your estimate are displayed in this panel
+            Details of contract added to your estimate are displayed in this
+            panel
           </p>
         </div>
         <div className={styles.estimatedCostContainer}>
@@ -68,14 +74,12 @@ const Contract = () => {
             <button className={styles.visualizeButton} disabled>
               Visualize
             </button>
-            <button className={styles.subscribeButton}>
-              Subscribe
-            </button>
+            <button className={styles.subscribeButton}>Subscribe</button>
           </div>
         </div>
       </div>
-      <ContractPopup 
-        isOpen={isPopupOpen} 
+      <ContractPopup
+        isOpen={isPopupOpen}
         onClose={handleClosePopup}
         onSelectContract={handleSelectContract}
       />
