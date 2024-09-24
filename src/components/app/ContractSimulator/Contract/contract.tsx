@@ -8,6 +8,7 @@ import HealthForm from "../../Forms/HealthForm";
 const Contract = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedContract, setSelectedContract] = useState<any>(null);
+  const [amount, setAmount] = useState<number>(NaN);
 
   const handleOpenPopup = () => setIsPopupOpen(true);
   const handleClosePopup = () => setIsPopupOpen(false);
@@ -19,7 +20,7 @@ const Contract = () => {
   const renderForm = () => {
     switch (selectedContract?.name) {
       case "Vehicle":
-        return <VehicleForm />;
+        return <VehicleForm setAmount={setAmount} />;
       case "Real Estate":
         return <RealEstateForm />;
       case "Health":
@@ -68,7 +69,7 @@ const Contract = () => {
         <div className={styles.estimatedCostContainer}>
           <div className={styles.estimatedCost}>
             <span>ESTIMATED COST</span>
-            <span>--/mo</span>
+            {isNaN(amount) ? <span>--/mo</span> : <span>{amount}$/mo</span>}
           </div>
           <div className={styles.buttonContainer}>
             <button className={styles.visualizeButton} disabled>

@@ -1,15 +1,29 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { defaultDb, clientPromise } from '@/lib/mongodb';
+import { ObjectId } from 'mongodb';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-	const { type } = req.query as { type: string };
+	const { id } = req.query as { id: string };
 	
-	try {
-		const client = await clientPromise;
-		const db = client.db('rgatt');
-		const vehicles = await db.collection(type).find({}).toArray();
-		res.status(200).json(vehicles);
-	} catch (error) {
-		res.status(500).json({ error: 'Failed to fetch vehicle data' });
+	console.log("API: ID route");
+
+	if (req.method === 'GET') {
+		try {
+			const client = await clientPromise;
+			const db = client.db('rgatt');
+			const vehicle = await db.collection('vehicles').findOne(
+				{ _id: new ObjectId(id) },
+				{ projection: { amount: 1 } }
+			);
+			
+			if (!vehicle) {
+				res.status(404).json({ error: "Error occured"});
+				return 
+			}
+			
+			res.status(200).json({ amount: vehicle?.amount });
+		} catch (error) {
+			res.status(404).json({ error: "error"});
+		}
 	}
 }

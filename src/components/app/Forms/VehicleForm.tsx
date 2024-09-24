@@ -28,7 +28,7 @@ interface VehiclesContract {
   amount: number;
 }
 
-const VehicleForm = () => {
+const VehicleForm = ({ setAmount }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [contractData, setContractData] = useState<VehiclesContract[] | null>(
@@ -58,6 +58,19 @@ const VehicleForm = () => {
 
     fetchContract();
   }, []);
+
+  const fetchAmount = async () => {
+    try {
+      console.log("contract data:", contractData);
+      const response = await axios.get(
+        `/api/contract/id/` + contractData
+      );
+    } catch (error) {
+      setError(
+        "Error occurred while fetching the amount for this configuration"
+      );
+    }
+  };
 
   return (
     <div className={styles.formWrapper}>
@@ -161,9 +174,7 @@ const VehicleForm = () => {
             <button
               type="submit"
               className={styles.submitButton}
-              onClick={() => {
-                console.log("1`2`3");
-              }}
+              onClick={fetchAmount}
             >
               Submit
             </button>
