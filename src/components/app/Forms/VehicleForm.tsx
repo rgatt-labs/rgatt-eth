@@ -158,7 +158,13 @@ const VehicleForm = () => {
               </select>
             </div>
 
-            <button type="submit" className={styles.submitButton}>
+            <button
+              type="submit"
+              className={styles.submitButton}
+              onClick={() => {
+                console.log("1`2`3");
+              }}
+            >
               Submit
             </button>
           </form>
