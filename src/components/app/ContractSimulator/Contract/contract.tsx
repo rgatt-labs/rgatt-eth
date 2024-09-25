@@ -4,6 +4,21 @@ import ContractPopup from "../../ContractPopup/ContractPopup";
 import VehicleForm from "../../Forms/VehicleForm";
 import RealEstateForm from "../../Forms/RealEstateForm";
 import HealthForm from "../../Forms/HealthForm";
+import {
+  useAccount,
+  useReadContract,
+  useWriteContract,
+  usePublicClient,
+} from "wagmi";
+import { parseAbi, parseEther } from "viem";
+
+const CONTRACT_ADDRESS = "0x952d73ecef9db9c869faec604de445efe0bb5976";
+const VAULT_ADDRESS = "0x2A7eE92D92aCEaf3508B8b51481c11E46f79Dd94";
+const ETH_ADDRESS = "0x0000000000000000000000000000000000000000";
+
+const depositToVaultAbi = parseAbi([
+  "function depositToken(address token, uint256 amount) public",
+]);
 
 const Contract = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -15,6 +30,37 @@ const Contract = () => {
 
   const handleSelectContract = (contract: any) => {
     setSelectedContract(contract);
+  };
+
+  const [ethAmount, amountToSendToVault] = useState<string>("");
+  const { address, chainId } = useAccount();
+
+  const {
+    writeContract,
+    data: hash,
+    error: writeError,
+    isPending: writePending,
+  } = useWriteContract();
+
+  const handleSendTransaction = async () => {
+    if (!ethAmount) {
+      alert("Please enter an amount");
+      return;
+    }
+
+    const value = parseEther(ethAmount);
+    console.log("value", value);
+
+    try {
+      await writeContract({
+        abi: depositToVaultAbi,
+        address: VAULT_ADDRESS,
+        functionName: "depositToken",
+        args: [ETH_ADDRESS, value],
+      });
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   const renderForm = () => {
@@ -65,6 +111,30 @@ const Contract = () => {
             Details of contract added to your estimate are displayed in this
             panel
           </p>
+          <input
+            style={{
+              display: "flex",
+              width: "95%",
+            }}
+            type="number"
+            placeholder="Enter amount in ETH"
+            value={ethAmount}
+            onChange={(e) => amountToSendToVault(e.target.value)}
+            step="0.001"
+            min="0"
+          />
+          {hash && (
+            <p
+              style={{
+                width: "100%",
+                wordWrap: "break-word",
+                wordBreak: "break-all",
+              }}
+            >
+              Transaction Hash: {hash}
+            </p>
+          )}
+          {writeError && <p>Error: {writeError.message}</p>}
         </div>
         <div className={styles.estimatedCostContainer}>
           <div className={styles.estimatedCost}>
@@ -75,7 +145,12 @@ const Contract = () => {
             <button className={styles.visualizeButton} disabled>
               Visualize
             </button>
-            <button className={styles.subscribeButton}>Subscribe</button>
+            <button
+              className={styles.subscribeButton}
+              onClick={handleSendTransaction}
+            >
+              Subscribe
+            </button>
           </div>
         </div>
       </div>

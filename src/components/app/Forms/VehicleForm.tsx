@@ -28,12 +28,17 @@ interface VehiclesContract {
   amount: number;
 }
 
-const VehicleForm = ({ setAmount }) => {
+const VehicleForm = ({
+  setAmount,
+}: {
+  setAmount: (amount: number) => void;
+}) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [contractData, setContractData] = useState<VehiclesContract[] | null>(
     null
   );
+  const [selectedContractId, setSelectedContractId] = useState<string>("");
 
   const [coverType, setCoverType] = useState("Comprehensive");
   const [typeVehicle, setTypeVehicle] = useState("Car");
@@ -49,6 +54,9 @@ const VehicleForm = ({ setAmount }) => {
         const response = await axios.get(`/api/contract/vehicles`);
         const data: VehiclesContract[] = response.data;
         setContractData(data);
+        if (data.length > 0) {
+          setSelectedContractId(data[0]._id);
+        }
       } catch (error) {
         setError("An error occurred while fetching the contract data.");
       } finally {
@@ -59,16 +67,21 @@ const VehicleForm = ({ setAmount }) => {
     fetchContract();
   }, []);
 
-  const fetchAmount = async () => {
+  const fetchAmount = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
     try {
-      console.log("contract data:", contractData);
       const response = await axios.get(
-        `/api/contract/id/` + contractData
+        `/api/contract/id/${selectedContractId}`
       );
+      setAmount(response.data.amount);
     } catch (error) {
       setError(
         "Error occurred while fetching the amount for this configuration"
       );
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -78,7 +91,6 @@ const VehicleForm = ({ setAmount }) => {
         style={{
           width: "fit-content",
           borderRadius: "8px",
-          //   boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         }}
       >
         <h2>Vehicle Form</h2>
@@ -88,11 +100,15 @@ const VehicleForm = ({ setAmount }) => {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={fetchAmount}>
             {contractData && contractData.length > 0 && (
               <div className={styles.formGroup}>
                 <label className={styles.label}>Contract ID:</label>
-                <select className={styles.select}>
+                <select
+                  className={styles.select}
+                  value={selectedContractId}
+                  onChange={(e) => setSelectedContractId(e.target.value)}
+                >
                   {contractData.map((contract) => (
                     <option key={contract._id} value={contract._id}>
                       {contract._id}
@@ -174,9 +190,9 @@ const VehicleForm = ({ setAmount }) => {
             <button
               type="submit"
               className={styles.submitButton}
-              onClick={fetchAmount}
+              disabled={loading}
             >
-              Submit
+              {loading ? "Loading..." : "Submit"}
             </button>
           </form>
         )}

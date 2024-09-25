@@ -5,8 +5,6 @@ import { ObjectId } from 'mongodb';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 	const { id } = req.query as { id: string };
 	
-	console.log("API: ID route");
-
 	if (req.method === 'GET') {
 		try {
 			const client = await clientPromise;
@@ -18,7 +16,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 			
 			if (!vehicle) {
 				res.status(404).json({ error: "Error occured"});
-				return 
 			}
 			
 			res.status(200).json({ amount: vehicle?.amount });
