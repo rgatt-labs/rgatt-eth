@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './header.module.css';
 import ConnectWallet from './Wallet/Connect';
 
 const Header: React.FC = () => {
+  const [vaultTooltipVisible, setVaultTooltipVisible] = useState(false);
+  const [dashboardTooltipVisible, setDashboardTooltipVisible] = useState(false);
+
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
@@ -17,15 +20,22 @@ const Header: React.FC = () => {
         </div>
         <nav className={styles.nav}>
           <div className={styles.leftNav}>
-            <Link href="/vault" passHref legacyBehavior>
-              <a className={styles.vaults}>Vaults</a>
-            </Link>
-            <Link href="/explorer" passHref legacyBehavior>
-              <a className={styles.explorer}>Explorer</a>
-            </Link>
-            <Link href="/dashboard" passHref legacyBehavior>
-              <a className={styles.dashboard}>Dashboard</a>
-            </Link>
+            <span
+              className={styles.vaults}
+              onMouseEnter={() => setVaultTooltipVisible(true)}
+              onMouseLeave={() => setVaultTooltipVisible(false)}
+            >
+              Vaults
+            </span>
+            {vaultTooltipVisible && <div className={styles.tooltip}>Under Construction</div>}
+            <span
+              className={styles.dashboard}
+              onMouseEnter={() => setDashboardTooltipVisible(true)}
+              onMouseLeave={() => setDashboardTooltipVisible(false)}
+            >
+              Dashboard
+            </span>
+            {dashboardTooltipVisible && <div className={styles.tooltip}>Under Construction</div>}
           </div>
           <div className={styles.rightNav}>
             <ConnectWallet />
