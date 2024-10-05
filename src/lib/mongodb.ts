@@ -1,19 +1,22 @@
 // lib/mongodb.ts
 import { MongoClient } from 'mongodb';
 
-const db_url = process.env.DATABASE_URL;
+const DB_URL = process.env.DATABASE_URL || "";
+const DEFAULT_COLLECTION = process.env.MONGO_COLLECTION;
 
-if (!db_url) {
+if (!DB_URL) {
   throw new Error('Please define the DATABASE_URL environment variable inside .env');
+}
+
+if (!DEFAULT_COLLECTION) {
+  throw new Error('Please define the MONGO_COLLECTION environment variable inside .env');
 }
 
 let client: MongoClient;
 let clientPromise: Promise<MongoClient>;
 
-client = new MongoClient(db_url);
+client = new MongoClient(DB_URL);
 
 clientPromise = client.connect();
 
-const defaultDb = clientPromise.then(client => client.db('rgatt'));
-
-export { clientPromise, defaultDb };
+export { clientPromise, DEFAULT_COLLECTION as DefaultCollection };

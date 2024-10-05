@@ -2,29 +2,14 @@ import React, { useState, useEffect } from "react";
 import styles from "./FormContainer.module.css";
 import axios from "axios";
 
-interface MedicalNeeds {
-  preExistingConditions: boolean;
-  ongoingTreatments: boolean;
-  surgeries: boolean;
-}
-
-interface AdditionalCoverage {
-  dental: boolean;
-  vision: boolean;
-  maternity: boolean;
-  mentalHealth: boolean;
-}
-
 interface VehiclesContract {
   _id: string;
   contractType: string;
-  healthInsuranceType: string;
-  coverageDetail: string;
-  medicalNeeds: MedicalNeeds;
-  additionalCoverage: AdditionalCoverage;
-  dependents: string;
-  coverageStartDate: string;
-  coverageEndDate: string;
+  coverType: string;
+  typeVehicle: string;
+  useOfVehicle: string;
+  country: string;
+  city: string;
   amount: number;
 }
 
@@ -40,11 +25,29 @@ const VehicleForm = ({
   );
   const [selectedContractId, setSelectedContractId] = useState<string>("");
 
+  // State for form fields
   const [coverType, setCoverType] = useState("Comprehensive");
   const [typeVehicle, setTypeVehicle] = useState("Car");
   const [useOfVehicle, setUseOfVehicle] = useState("Personal");
   const [country, setCountry] = useState("France");
-  const [city, setCity] = useState("Lyon");
+  const [city, setCity] = useState("Paris");
+
+  // Options for form fields
+  const coverTypeOptions = ["Comprehensive", "Third-Party", "Collision"];
+  const typeVehicleOptions = ["Car", "Motorcycle", "Truck"];
+  const useOfVehicleOptions = ["Personal", "Commercial"];
+  const countryOptions = [
+    "France",
+    "United Kingdom",
+    "United States",
+    "Australia",
+  ];
+  const cityOptions = {
+    France: ["Paris", "Lyon", "Marseille"],
+    "United Kingdom": ["London", "Manchester", "Birmingham"],
+    "United States": ["New York", "Los Angeles", "Chicago"],
+    Australia: ["Sydney", "Melbourne", "Brisbane"],
+  };
 
   useEffect(() => {
     const fetchContract = async () => {
@@ -67,32 +70,34 @@ const VehicleForm = ({
     fetchContract();
   }, []);
 
-  const fetchAmount = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError(null);
-    try {
-      const response = await axios.get(
-        `/api/contract/id/${selectedContractId}`
-      );
-      setAmount(response.data.amount);
-    } catch (error) {
-      setError(
-        "Error occurred while fetching the amount for this configuration"
-      );
-    } finally {
-      setLoading(false);
-    }
-  };
+  useEffect(() => {
+    const fetchVehicles = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        const response = await axios.post(`/api/contract/vehicles/route`, {
+          cover: coverType,
+          type: typeVehicle,
+          usage: useOfVehicle,
+          country: country,
+          city: city,
+        });
+        setAmount(response.data.amount);
+      } catch (error) {
+        setError(
+          "Error occurred while fetching the amount for this configuration"
+        );
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchVehicles();
+  }, [coverType, typeVehicle, useOfVehicle, country, city, setAmount]);
 
   return (
     <div className={styles.formWrapper}>
-      <div
-        style={{
-          width: "fit-content",
-          borderRadius: "8px",
-        }}
-      >
+      <div style={{ width: "fit-content", borderRadius: "8px" }}>
         <h2>Vehicle Form</h2>
         {error && (
           <p style={{ color: "#e53e3e", marginBottom: "1rem" }}>{error}</p>
@@ -100,7 +105,7 @@ const VehicleForm = ({
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <form className={styles.form} onSubmit={fetchAmount}>
+          <form className={styles.form}>
             {contractData && contractData.length > 0 && (
               <div className={styles.formGroup}>
                 <label className={styles.label}>Contract ID:</label>
@@ -125,11 +130,11 @@ const VehicleForm = ({
                 value={coverType}
                 onChange={(e) => setCoverType(e.target.value)}
               >
-                <option value="Comprehensive">Comprehensive</option>
-                <option value="Third Party">Third Party</option>
-                <option value="Third Party Fire and Theft">
-                  Third Party Fire and Theft
-                </option>
+                {coverTypeOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -140,10 +145,11 @@ const VehicleForm = ({
                 value={typeVehicle}
                 onChange={(e) => setTypeVehicle(e.target.value)}
               >
-                <option value="Car">Car</option>
-                <option value="Motorcycle">Motorcycle</option>
-                <option value="Truck">Truck</option>
-                <option value="Van">Van</option>
+                {typeVehicleOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -154,8 +160,11 @@ const VehicleForm = ({
                 value={useOfVehicle}
                 onChange={(e) => setUseOfVehicle(e.target.value)}
               >
-                <option value="Personal">Personal</option>
-                <option value="Commercial">Commercial</option>
+                {useOfVehicleOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -164,12 +173,18 @@ const VehicleForm = ({
               <select
                 className={styles.select}
                 value={country}
-                onChange={(e) => setCountry(e.target.value)}
+                onChange={(e) => {
+                  setCountry(e.target.value);
+                  setCity(
+                    cityOptions[e.target.value as keyof typeof cityOptions][0]
+                  );
+                }}
               >
-                <option value="France">France</option>
-                <option value="Germany">Germany</option>
-                <option value="Italy">Italy</option>
-                <option value="Spain">Spain</option>
+                {countryOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -180,20 +195,15 @@ const VehicleForm = ({
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
               >
-                <option value="Lyon">Lyon</option>
-                <option value="Paris">Paris</option>
-                <option value="Marseille">Marseille</option>
-                <option value="Bordeaux">Bordeaux</option>
+                {cityOptions[country as keyof typeof cityOptions].map(
+                  (option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  )
+                )}
               </select>
             </div>
-
-            <button
-              type="submit"
-              className={styles.submitButton}
-              disabled={loading}
-            >
-              {loading ? "Loading..." : "Submit"}
-            </button>
           </form>
         )}
       </div>

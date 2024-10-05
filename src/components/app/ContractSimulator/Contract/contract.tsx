@@ -111,18 +111,6 @@ const Contract = () => {
             Details of contract added to your estimate are displayed in this
             panel
           </p>
-          <input
-            style={{
-              display: "flex",
-              width: "95%",
-            }}
-            type="number"
-            placeholder="Enter amount in ETH"
-            value={ethAmount}
-            onChange={(e) => amountToSendToVault(e.target.value)}
-            step="0.001"
-            min="0"
-          />
           {hash && (
             <p
               style={{

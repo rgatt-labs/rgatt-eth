@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { defaultDb, clientPromise } from '@/lib/mongodb';
+import { clientPromise, DefaultCollection  } from '@/lib/mongodb';
 import { NextResponse } from 'next/server';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -8,7 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	if (req.method === 'GET') {
 		try {
 			const client = await clientPromise;
-			const db = client.db('rgatt');
+			const db = client.db(DefaultCollection);
 			const vehicles = await db.collection(type).find({}).toArray();
 			return res.status(200).json(vehicles);
 		} catch (error) {
