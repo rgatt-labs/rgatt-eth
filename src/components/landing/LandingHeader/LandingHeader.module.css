@@ -1,0 +1,55 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .nav a:hover {
+    color: #ffffff;
+  }
+  
+  .launchButton {
+    background-color: #13273F;
+    color: #1d1815;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .launchButton:hover {
+    background-color: #0064B7;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav a {
+      margin: 10px 0;
+    }
+    
+    .header {
+      flex-direction: column;
+    }
+  }

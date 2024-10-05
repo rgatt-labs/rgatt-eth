@@ -5,7 +5,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import '../styles/globals.css';
 import { WagmiProvider } from 'wagmi';
-import { config } from '../wagmiConfig';
+import { config } from '../config/wagmiConfig';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const queryClient = new QueryClient();

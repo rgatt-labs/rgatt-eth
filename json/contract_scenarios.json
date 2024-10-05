@@ -1,0 +1,6482 @@
+[
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Paris",
+    "amount": 444
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 413
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 173
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 125
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 815
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 849
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "New York",
+    "amount": 339
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 545
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 302
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 377
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 381
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 976
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Paris",
+    "amount": 262
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 574
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 436
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 512
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 564
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 820
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "New York",
+    "amount": 494
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 906
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 660
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 853
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 284
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 396
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Paris",
+    "amount": 621
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 539
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 713
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 430
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 482
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 463
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "New York",
+    "amount": 849
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 453
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 757
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 375
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 546
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 872
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Paris",
+    "amount": 160
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 801
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 770
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 675
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 363
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 605
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "New York",
+    "amount": 198
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 589
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 910
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 287
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 396
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 437
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Paris",
+    "amount": 687
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 688
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 825
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 471
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 988
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 651
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "New York",
+    "amount": 459
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 645
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 824
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 507
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 244
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 898
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Paris",
+    "amount": 241
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 667
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 715
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 354
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 859
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 393
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "New York",
+    "amount": 245
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 350
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 582
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 892
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 787
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 462
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Paris",
+    "amount": 626
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 202
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 829
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 327
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 447
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 847
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "New York",
+    "amount": 686
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 199
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 672
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 281
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 759
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 994
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Paris",
+    "amount": 931
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 253
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 613
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 497
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 503
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 992
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "New York",
+    "amount": 718
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 571
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 667
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 433
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 233
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 990
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Paris",
+    "amount": 211
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 860
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 608
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 295
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 152
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 717
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "New York",
+    "amount": 642
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 408
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 305
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 788
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 608
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 715
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Paris",
+    "amount": 621
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 697
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 318
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 448
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 837
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 204
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "New York",
+    "amount": 272
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 151
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 910
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 448
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 907
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 454
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Paris",
+    "amount": 643
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 425
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 140
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 971
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 554
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 821
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "New York",
+    "amount": 216
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 757
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 965
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 453
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 516
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 610
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Paris",
+    "amount": 262
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 874
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 931
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 123
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 264
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 352
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "New York",
+    "amount": 769
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 254
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 720
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 667
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 659
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 980
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Paris",
+    "amount": 967
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 718
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 763
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 255
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 407
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 251
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "New York",
+    "amount": 297
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 105
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 155
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 168
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 190
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 589
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Paris",
+    "amount": 898
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 280
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 562
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 636
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 235
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 583
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "New York",
+    "amount": 364
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 489
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 201
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 739
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 721
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 230
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Paris",
+    "amount": 485
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 992
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 471
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 794
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 941
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 628
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "New York",
+    "amount": 679
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 744
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 899
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 381
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 694
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 221
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Paris",
+    "amount": 562
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 303
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 190
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 746
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 489
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 966
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "New York",
+    "amount": 445
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 696
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 194
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 969
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 540
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 744
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Paris",
+    "amount": 294
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 483
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 326
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 601
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 522
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 725
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "New York",
+    "amount": 482
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 350
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 258
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 922
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 132
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 169
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Paris",
+    "amount": 761
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 879
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 169
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 235
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 416
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 510
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "New York",
+    "amount": 798
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 568
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 451
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 348
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 213
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 144
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Paris",
+    "amount": 494
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 510
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 819
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 334
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 839
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 913
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "New York",
+    "amount": 807
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 386
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 330
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 856
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 952
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 127
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Paris",
+    "amount": 915
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 135
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 354
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 783
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 808
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 700
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "New York",
+    "amount": 289
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 183
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 863
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 825
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 465
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Primary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 511
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Paris",
+    "amount": 443
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 170
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 637
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 786
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 966
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 779
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "New York",
+    "amount": 503
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 179
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 712
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 160
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 324
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 909
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Paris",
+    "amount": 995
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 771
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 557
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 270
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 155
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 312
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "New York",
+    "amount": 622
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 661
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 276
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 520
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 803
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 788
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Paris",
+    "amount": 820
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 927
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 472
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 294
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 152
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 608
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "New York",
+    "amount": 296
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 755
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 725
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 730
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 309
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 745
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Paris",
+    "amount": 976
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 211
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 136
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 303
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 165
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 505
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "New York",
+    "amount": 907
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 505
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 497
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 529
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 577
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 578
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Paris",
+    "amount": 806
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 558
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 160
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 659
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 959
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 265
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "New York",
+    "amount": 548
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 271
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 187
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 835
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 520
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 521
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Paris",
+    "amount": 331
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 683
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 715
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 293
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 569
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 120
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "New York",
+    "amount": 793
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 446
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 635
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 429
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 794
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 936
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Paris",
+    "amount": 699
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 126
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 316
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 844
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 567
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 573
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "New York",
+    "amount": 295
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 827
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 900
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 584
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 546
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 446
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Paris",
+    "amount": 209
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 840
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 363
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 307
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 653
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 580
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "New York",
+    "amount": 187
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 959
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 801
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 344
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 911
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 983
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Paris",
+    "amount": 372
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 173
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 448
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 267
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 145
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 907
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "New York",
+    "amount": 714
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 926
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 331
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 212
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 698
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 693
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Paris",
+    "amount": 679
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 708
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 245
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 430
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 608
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 941
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "New York",
+    "amount": 850
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 478
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 493
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 294
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 540
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 307
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Paris",
+    "amount": 557
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 916
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 884
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 332
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 360
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 679
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "New York",
+    "amount": 829
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 228
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 129
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 647
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 341
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 214
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Paris",
+    "amount": 882
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 175
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 781
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 920
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 793
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 100
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "New York",
+    "amount": 171
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 326
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 221
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 203
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 590
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 692
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Paris",
+    "amount": 362
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 876
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 778
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 302
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 928
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 121
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "New York",
+    "amount": 237
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 945
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 901
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 677
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 412
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 186
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Paris",
+    "amount": 662
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 880
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 186
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 660
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 429
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 437
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "New York",
+    "amount": 107
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 867
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 475
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 717
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 953
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 317
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Paris",
+    "amount": 111
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 910
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 585
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 517
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 203
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 508
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "New York",
+    "amount": 182
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 299
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 702
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 517
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 497
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 913
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Paris",
+    "amount": 964
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 122
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 620
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 319
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 750
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 293
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "New York",
+    "amount": 249
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 553
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 978
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 939
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 567
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 604
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Paris",
+    "amount": 962
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 119
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 368
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 202
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 332
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 655
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "New York",
+    "amount": 196
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 371
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 795
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 327
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 466
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 441
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Paris",
+    "amount": 177
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 761
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 758
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 368
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 137
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 862
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "New York",
+    "amount": 166
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 376
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 856
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 975
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 256
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 801
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Paris",
+    "amount": 281
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 651
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 785
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 869
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 116
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 835
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "New York",
+    "amount": 843
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 313
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 201
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 971
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 966
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 492
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Paris",
+    "amount": 514
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 234
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 722
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 671
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 846
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 447
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "New York",
+    "amount": 104
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 154
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 312
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 564
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 998
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Secondary Residence",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 442
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Paris",
+    "amount": 138
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 904
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 152
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 398
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 506
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 406
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "New York",
+    "amount": 236
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 373
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 207
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 641
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 768
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 828
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Paris",
+    "amount": 537
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 673
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 782
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 980
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 917
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 398
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "New York",
+    "amount": 426
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 124
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 683
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 282
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 653
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 265
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Paris",
+    "amount": 135
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 851
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 752
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 828
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 371
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 159
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "New York",
+    "amount": 848
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 130
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 835
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 268
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 574
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 374
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Paris",
+    "amount": 805
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 293
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 441
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 730
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 993
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 232
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "New York",
+    "amount": 102
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 727
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 822
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 787
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 625
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 645
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Paris",
+    "amount": 120
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 140
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 332
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 152
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 484
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 296
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "New York",
+    "amount": 623
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 484
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 530
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 497
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 857
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 779
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Paris",
+    "amount": 736
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 490
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 471
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 597
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 128
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 784
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "New York",
+    "amount": 512
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 793
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 740
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 357
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 510
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 509
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Paris",
+    "amount": 686
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 680
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 714
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 579
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 220
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 661
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "New York",
+    "amount": 579
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 356
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 953
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 335
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 786
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 518
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Paris",
+    "amount": 670
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 725
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 917
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 404
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 456
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 622
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "New York",
+    "amount": 404
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 793
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 729
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 415
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 752
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 493
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Paris",
+    "amount": 396
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 397
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 721
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 920
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 290
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 778
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "New York",
+    "amount": 726
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 800
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 108
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 550
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 310
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 434
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Paris",
+    "amount": 694
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 539
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 358
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 266
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 556
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 217
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "New York",
+    "amount": 541
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 274
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 111
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 909
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 198
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "Apartment",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 940
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Paris",
+    "amount": 144
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 727
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 173
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 157
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 240
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 627
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "New York",
+    "amount": 991
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 610
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 419
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 415
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 476
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 1,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 901
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Paris",
+    "amount": 770
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 228
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 484
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 956
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 835
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 544
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "New York",
+    "amount": 390
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 376
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 775
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 206
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 598
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 2,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 311
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Paris",
+    "amount": 828
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 296
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 804
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 396
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 228
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 806
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "New York",
+    "amount": 239
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 440
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 873
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 899
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 493
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 3,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 805
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Paris",
+    "amount": 182
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 573
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 326
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 175
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 902
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 676
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "New York",
+    "amount": 909
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 412
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 685
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 586
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 300
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 4,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 200
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Paris",
+    "amount": 417
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 102
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 943
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 765
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 285
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 596
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "New York",
+    "amount": 826
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 230
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 749
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 872
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 425
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 5,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 603
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Paris",
+    "amount": 673
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 680
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 151
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 922
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 866
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 755
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "New York",
+    "amount": 934
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 127
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 758
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 408
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 425
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 6,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 401
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Paris",
+    "amount": 510
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 996
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 856
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 906
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 205
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 942
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "New York",
+    "amount": 570
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 735
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 138
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 810
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 273
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 7,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 721
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Paris",
+    "amount": 391
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 430
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 855
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 129
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 395
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 799
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "New York",
+    "amount": 308
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 931
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 433
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 790
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 702
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 8,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 845
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Paris",
+    "amount": 210
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 457
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 859
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 126
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 927
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 539
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "New York",
+    "amount": 486
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 620
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 509
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 664
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 343
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 9,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 513
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Paris",
+    "amount": 130
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Lyon",
+    "amount": 524
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "France",
+    "city": "Marseille",
+    "amount": 479
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 767
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 476
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 384
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "New York",
+    "amount": 1000
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 141
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 875
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 808
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 943
+  },
+  {
+    "contractType": "real_estate",
+    "insuredObject": "Rental Apartment",
+    "propertyType": "House",
+    "numberOfRooms": 10,
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 846
+  }
+]

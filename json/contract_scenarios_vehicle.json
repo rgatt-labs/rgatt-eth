@@ -1,0 +1,1946 @@
+[
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Paris",
+    "amount": 139
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 614
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 360
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 209
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 818
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 263
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "New York",
+    "amount": 845
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 873
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 430
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 886
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 634
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 652
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Paris",
+    "amount": 626
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 325
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 832
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 967
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 512
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 355
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "New York",
+    "amount": 344
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 870
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 486
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 966
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 685
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 530
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Paris",
+    "amount": 442
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 490
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 664
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 674
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 214
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 508
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "New York",
+    "amount": 161
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 857
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 446
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 195
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 705
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 830
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Paris",
+    "amount": 533
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 515
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 949
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 442
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 683
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 920
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "New York",
+    "amount": 801
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 853
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 195
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 307
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 141
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 996
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Paris",
+    "amount": 839
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 186
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 743
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 528
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 138
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 420
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "New York",
+    "amount": 712
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 472
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 335
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 996
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 830
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 698
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Paris",
+    "amount": 187
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 570
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 572
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 870
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 672
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 385
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "New York",
+    "amount": 757
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 915
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 675
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 465
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 212
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Comprehensive",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 601
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Paris",
+    "amount": 107
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 464
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 334
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 834
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 574
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 845
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "New York",
+    "amount": 988
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 505
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 270
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 157
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 322
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 566
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Paris",
+    "amount": 843
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 495
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 123
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 923
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 154
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 986
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "New York",
+    "amount": 998
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 446
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 631
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 262
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 117
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 388
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Paris",
+    "amount": 941
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 196
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 482
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 550
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 679
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 750
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "New York",
+    "amount": 791
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 687
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 139
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 896
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 141
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 241
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Paris",
+    "amount": 869
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 237
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 337
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 572
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 913
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 704
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "New York",
+    "amount": 709
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 344
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 991
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 693
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 954
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 852
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Paris",
+    "amount": 163
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 124
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 552
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 946
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 868
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 321
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "New York",
+    "amount": 576
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 754
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 348
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 434
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 551
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 667
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Paris",
+    "amount": 857
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 839
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 512
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 432
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 487
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 689
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "New York",
+    "amount": 937
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 156
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 624
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 614
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 443
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Third-Party",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 186
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Paris",
+    "amount": 716
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 927
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 917
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 159
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 826
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 491
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "New York",
+    "amount": 651
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 262
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 761
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 746
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 739
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 287
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Paris",
+    "amount": 147
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 833
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 390
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 814
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 529
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 106
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "New York",
+    "amount": 272
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 420
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 105
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 223
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 847
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Car",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 493
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Paris",
+    "amount": 291
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 816
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 546
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 513
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 762
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 467
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "New York",
+    "amount": 576
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 932
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 603
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 429
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 307
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 497
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Paris",
+    "amount": 443
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 575
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 150
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 928
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 748
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 480
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "New York",
+    "amount": 972
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 416
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 714
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 588
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 160
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Motorcycle",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 752
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Paris",
+    "amount": 397
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 154
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 331
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 719
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 263
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 588
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "New York",
+    "amount": 969
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 355
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 264
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 355
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 225
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Personal",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 920
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Paris",
+    "amount": 122
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Lyon",
+    "amount": 881
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "France",
+    "city": "Marseille",
+    "amount": 212
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "London",
+    "amount": 172
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "amount": 873
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "amount": 284
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "New York",
+    "amount": 433
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Los Angeles",
+    "amount": 979
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "United States",
+    "city": "Chicago",
+    "amount": 121
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Sydney",
+    "amount": 748
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Melbourne",
+    "amount": 690
+  },
+  {
+    "contractType": "vehicle",
+    "coverType": "Collision",
+    "typeVehicle": "Truck",
+    "useOfVehicle": "Commercial",
+    "country": "Australia",
+    "city": "Brisbane",
+    "amount": 385
+  }
+]

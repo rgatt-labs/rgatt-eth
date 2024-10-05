@@ -1,10 +1,9 @@
-// next.config.js
 module.exports = {
   async redirects() {
     return [
       {
-        source: '/',
-        destination: '/LandingPage',
+        source: "/",
+        destination: "/LandingPage",
         permanent: true,
       },
     ];
