@@ -34,6 +34,7 @@
   display: flex;
   align-items: center;
   flex: 1;
+  position: relative; /* Position relative pour le tooltip */
 }
 
 .rightNav {
@@ -42,19 +43,33 @@
   justify-content: flex-end;
 }
 
-.vaults, .explorer, .dashboard {
+.vaults {
   margin-right: 20px;
-  cursor: pointer;
+  cursor: not-allowed; /* Indiquer que c'est inactif */
   font-weight: 500;
-  transition: color 0.3s;
-  color: rgb(0, 0, 0);
+  color: rgb(150, 150, 150); /* Couleur moins noire */
   text-decoration: none;
 }
 
-.vaults:hover,
-.explorer:hover,
-.dashboard:hover {
-  color: #0064B7;
+.dashboard {
+  margin-right: 20px;
+  cursor: not-allowed; /* Indiquer que c'est inactif */
+  font-weight: 500;
+  color: rgb(150, 150, 150); /* Couleur moins noire */
+  text-decoration: none;
+}
+
+.tooltip {
+  position: absolute; /* Position absolue pour le tooltip */
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  margin-top: -5px; /* Ajustement pour la position du tooltip */
+  white-space: nowrap; /* Empêcher le retour à la ligne */
+  transform: translateX(-50%); /* Centrer le tooltip */
+  left: 50%; /* Centrer le tooltip */
 }
 
 .headerDivider {
