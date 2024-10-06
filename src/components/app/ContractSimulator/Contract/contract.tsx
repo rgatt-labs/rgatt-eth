@@ -11,10 +11,10 @@ import {
   usePublicClient,
 } from "wagmi";
 import { parseAbi, parseEther } from "viem";
+import TokenSelect, { TokenData } from "./TokenSelect";
 
 const CONTRACT_ADDRESS = "0x952d73ecef9db9c869faec604de445efe0bb5976";
 const VAULT_ADDRESS = "0x2A7eE92D92aCEaf3508B8b51481c11E46f79Dd94";
-const ETH_ADDRESS = "0x0000000000000000000000000000000000000000";
 
 const depositToVaultAbi = parseAbi([
   "function depositToken(address token, uint256 amount) public",
@@ -23,7 +23,10 @@ const depositToVaultAbi = parseAbi([
 const Contract = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedContract, setSelectedContract] = useState<any>(null);
-  const [amount, setAmount] = useState<number>(NaN);
+  const [amount, setAmount] = useState<string>("");
+  const [transactionToken, setTransactionToken] = useState<string>(
+    TokenData.ETH_ADDRESS.address
+  );
 
   const handleOpenPopup = () => setIsPopupOpen(true);
   const handleClosePopup = () => setIsPopupOpen(false);
@@ -32,7 +35,6 @@ const Contract = () => {
     setSelectedContract(contract);
   };
 
-  const [ethAmount, amountToSendToVault] = useState<string>("");
   const { address, chainId } = useAccount();
 
   const {
@@ -43,12 +45,13 @@ const Contract = () => {
   } = useWriteContract();
 
   const handleSendTransaction = async () => {
-    if (!ethAmount) {
+    if (!amount) {
       alert("Please enter an amount");
       return;
     }
 
-    const value = parseEther(ethAmount);
+    console.log("amount", amount);
+    const value = parseEther(amount);
     console.log("value", value);
 
     try {
@@ -56,7 +59,7 @@ const Contract = () => {
         abi: depositToVaultAbi,
         address: VAULT_ADDRESS,
         functionName: "depositToken",
-        args: [ETH_ADDRESS, value],
+        args: [transactionToken as `0x${string}`, value],
       });
     } catch (e) {
       console.error(e);
@@ -111,6 +114,7 @@ const Contract = () => {
             Details of contract added to your estimate are displayed in this
             panel
           </p>
+          <TokenSelect onChange={(token) => setTransactionToken(token)} />
           {hash && (
             <p
               style={{
@@ -127,7 +131,7 @@ const Contract = () => {
         <div className={styles.estimatedCostContainer}>
           <div className={styles.estimatedCost}>
             <span>ESTIMATED COST</span>
-            {isNaN(amount) ? <span>--/mo</span> : <span>{amount}$/mo</span>}
+            {!amount ? <span>--/mo</span> : <span>{amount}$/mo</span>}
           </div>
           <div className={styles.buttonContainer}>
             <button className={styles.visualizeButton} disabled>

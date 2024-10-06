@@ -1,0 +1,62 @@
+.customSelect {
+	position: relative;
+	width: 100%;
+	font-size: 16px;
+  }
+  
+  .selectedToken {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: white;
+	color: #333;
+  }
+  
+  .selectedToken img {
+	margin-right: 10px;
+  }
+  
+  .arrow {
+	margin-left: auto;
+	color: #ccc;
+  }
+  
+  .tokenList {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-radius: 0 0 4px 4px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	max-height: 200px;
+	overflow-y: auto;
+	z-index: 1000;
+  }
+  
+  .tokenList li {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+	color: #333;
+  }
+  
+  .tokenList li:hover {
+	background-color: #f0f0f0;
+  }
+  
+  .tokenList li.selected {
+	background-color: #e0e0e0;
+  }
+  
+  .tokenList li img {
+	margin-right: 10px;
+  }

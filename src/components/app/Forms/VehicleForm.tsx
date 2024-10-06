@@ -16,14 +16,10 @@ interface VehiclesContract {
 const VehicleForm = ({
   setAmount,
 }: {
-  setAmount: (amount: number) => void;
+  setAmount: (amount: string) => void;
 }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [contractData, setContractData] = useState<VehiclesContract[] | null>(
-    null
-  );
-  const [selectedContractId, setSelectedContractId] = useState<string>("");
 
   // State for form fields
   const [coverType, setCoverType] = useState("Comprehensive");
@@ -50,27 +46,6 @@ const VehicleForm = ({
   };
 
   useEffect(() => {
-    const fetchContract = async () => {
-      setLoading(true);
-      setError(null);
-      try {
-        const response = await axios.get(`/api/contract/vehicles`);
-        const data: VehiclesContract[] = response.data;
-        setContractData(data);
-        if (data.length > 0) {
-          setSelectedContractId(data[0]._id);
-        }
-      } catch (error) {
-        setError("An error occurred while fetching the contract data.");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchContract();
-  }, []);
-
-  useEffect(() => {
     const fetchVehicles = async () => {
       setLoading(true);
       setError(null);
@@ -82,7 +57,7 @@ const VehicleForm = ({
           country: country,
           city: city,
         });
-        setAmount(response.data.amount);
+        setAmount(response.data.amount.toString());
       } catch (error) {
         setError(
           "Error occurred while fetching the amount for this configuration"
@@ -106,23 +81,6 @@ const VehicleForm = ({
           <p>Loading...</p>
         ) : (
           <form className={styles.form}>
-            {contractData && contractData.length > 0 && (
-              <div className={styles.formGroup}>
-                <label className={styles.label}>Contract ID:</label>
-                <select
-                  className={styles.select}
-                  value={selectedContractId}
-                  onChange={(e) => setSelectedContractId(e.target.value)}
-                >
-                  {contractData.map((contract) => (
-                    <option key={contract._id} value={contract._id}>
-                      {contract._id}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            )}
-
             <div className={styles.formGroup}>
               <label className={styles.label}>Cover Type:</label>
               <select
