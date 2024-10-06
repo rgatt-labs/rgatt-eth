@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './header.module.css';
-import { ConnectButton, useActiveWalletChain, useSwitchActiveWalletChain } from "thirdweb/react";
-import { sepolia, arbitrumSepolia, optimismSepolia, baseSepolia } from 'thirdweb/chains';
+import { ConnectButton, lightTheme, useActiveWalletChain, useSwitchActiveWalletChain } from "thirdweb/react";
+import { sepolia, arbitrumSepolia, optimismSepolia, baseSepolia, ethereum } from 'thirdweb/chains';
+import { createWallet } from "thirdweb/wallets";
 import { createThirdwebClient } from "thirdweb";
 
 const client = createThirdwebClient({
@@ -23,9 +24,18 @@ const Header: React.FC = () => {
     const selectedChain = supportedChains.find(chain => chain.id === chainId);
     if (selectedChain) {
       switchChain(selectedChain).catch((error) => console.error(error));
-      setDropdownVisible(false); // Ferme le menu déroulant après la sélection
+      setDropdownVisible(false);
     }
   };
+
+  const wallets = [
+    createWallet("io.metamask"),
+    createWallet("io.rabby"),
+    createWallet("com.coinbase.wallet"),
+    createWallet("com.okex.wallet"),
+    createWallet("com.binance"),
+    createWallet("org.uniswap"),
+  ];
 
   return (
     <header className={styles.header}>
@@ -79,9 +89,16 @@ const Header: React.FC = () => {
               )}
             </div>
             <ConnectButton
-              theme={"light"}
-              connectModal={{ size: "wide", title: "Rgatt" }}
               client={client}
+              wallets={wallets}
+              theme={lightTheme({
+                colors: { accentText: "#8e9db4" },
+              })}
+              connectModal={{
+                size: "wide",
+                title: "Rgatt Protocol",
+                showThirdwebBranding: false,
+              }}
             />
           </div>
         </nav>
