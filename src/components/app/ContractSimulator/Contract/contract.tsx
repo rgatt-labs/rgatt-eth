@@ -33,35 +33,6 @@ const Contract = () => {
   };
 
   const [ethAmount, amountToSendToVault] = useState<string>("");
-  const { address, chainId } = useAccount();
-
-  const {
-    writeContract,
-    data: hash,
-    error: writeError,
-    isPending: writePending,
-  } = useWriteContract();
-
-  const handleSendTransaction = async () => {
-    if (!ethAmount) {
-      alert("Please enter an amount");
-      return;
-    }
-
-    const value = parseEther(ethAmount);
-    console.log("value", value);
-
-    try {
-      await writeContract({
-        abi: depositToVaultAbi,
-        address: VAULT_ADDRESS,
-        functionName: "depositToken",
-        args: [ETH_ADDRESS, value],
-      });
-    } catch (e) {
-      console.error(e);
-    }
-  };
 
   const renderForm = () => {
     switch (selectedContract?.name) {
@@ -111,18 +82,18 @@ const Contract = () => {
             Details of contract added to your estimate are displayed in this
             panel
           </p>
-          {hash && (
-            <p
-              style={{
-                width: "100%",
-                wordWrap: "break-word",
-                wordBreak: "break-all",
-              }}
-            >
-              Transaction Hash: {hash}
-            </p>
-          )}
-          {writeError && <p>Error: {writeError.message}</p>}
+          <input
+            style={{
+              display: "flex",
+              width: "95%",
+            }}
+            type="number"
+            placeholder="Enter amount in ETH"
+            value={ethAmount}
+            onChange={(e) => amountToSendToVault(e.target.value)}
+            step="0.001"
+            min="0"
+          />
         </div>
         <div className={styles.estimatedCostContainer}>
           <div className={styles.estimatedCost}>
@@ -135,7 +106,6 @@ const Contract = () => {
             </button>
             <button
               className={styles.subscribeButton}
-              onClick={handleSendTransaction}
             >
               Subscribe
             </button>

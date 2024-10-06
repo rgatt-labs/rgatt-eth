@@ -4,10 +4,10 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import '../styles/globals.css';
-import { WagmiProvider } from 'wagmi';
-import { config } from '../config/wagmiConfig';
+import { ThirdwebProvider } from "thirdweb/react"; // Supprime createThirdwebClient ici
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
+// Initialise le client Thirdweb
 const queryClient = new QueryClient();
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -15,17 +15,17 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-			rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet"
         />
       </Head>
-		<WagmiProvider config={config}>
-			<QueryClientProvider client={queryClient}>
-				<Component {...pageProps} />
-			</QueryClientProvider>
-		</WagmiProvider>
+      <ThirdwebProvider> {/* Pas de client passé ici */}
+        <QueryClientProvider client={queryClient}>
+          <Component {...pageProps} />
+        </QueryClientProvider>
+      </ThirdwebProvider>
     </>
   );
 }
