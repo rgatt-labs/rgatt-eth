@@ -11,7 +11,7 @@
   "dependencies": {
     "@prisma/client": "^5.19.1",
     "@rabby-wallet/rabbykit": "^0.0.5",
-    "@tanstack/react-query": "^5.49.2",
+    "@tanstack/react-query": "^5.59.0",
     "@wagmi/core": "^1.4.13",
     "@wagmi/vue": "^0.0.26",
     "axios": "^1.7.5",
@@ -24,8 +24,9 @@
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.4",
-    "viem": "^2.17.0",
-    "wagmi": "^2.10.9"
+    "thirdweb": "^5.61.0",
+    "viem": "^2.21.18",
+    "wagmi": "^2.12.17"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -95,3 +95,47 @@
     justify-content: flex-start;
   }
 }
+
+.chainSelector {
+  position: relative;
+  display: inline-block;
+}
+
+.selectedChain {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.selectedChain:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: block; /* Affiche le menu déroulant */
+}
+
+.chainOption {
+  padding: 8px 12px;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chainOption:hover {
+  background-color: #f0f0f0;
+}

@@ -4,12 +4,6 @@ import ContractPopup from "../../ContractPopup/ContractPopup";
 import VehicleForm from "../../Forms/VehicleForm";
 import RealEstateForm from "../../Forms/RealEstateForm";
 import HealthForm from "../../Forms/HealthForm";
-import {
-  useAccount,
-  useReadContract,
-  useWriteContract,
-  usePublicClient,
-} from "wagmi";
 import { parseAbi, parseEther } from "viem";
 import TokenSelect, { TokenData } from "./TokenSelect";
 
@@ -33,37 +27,6 @@ const Contract = () => {
 
   const handleSelectContract = (contract: any) => {
     setSelectedContract(contract);
-  };
-
-  const { address, chainId } = useAccount();
-
-  const {
-    writeContract,
-    data: hash,
-    error: writeError,
-    isPending: writePending,
-  } = useWriteContract();
-
-  const handleSendTransaction = async () => {
-    if (!amount) {
-      alert("Please enter an amount");
-      return;
-    }
-
-    console.log("amount", amount);
-    const value = parseEther(amount);
-    console.log("value", value);
-
-    try {
-      await writeContract({
-        abi: depositToVaultAbi,
-        address: VAULT_ADDRESS,
-        functionName: "depositToken",
-        args: [transactionToken as `0x${string}`, value],
-      });
-    } catch (e) {
-      console.error(e);
-    }
   };
 
   const renderForm = () => {
@@ -115,18 +78,6 @@ const Contract = () => {
             panel
           </p>
           <TokenSelect onChange={(token) => setTransactionToken(token)} />
-          {hash && (
-            <p
-              style={{
-                width: "100%",
-                wordWrap: "break-word",
-                wordBreak: "break-all",
-              }}
-            >
-              Transaction Hash: {hash}
-            </p>
-          )}
-          {writeError && <p>Error: {writeError.message}</p>}
         </div>
         <div className={styles.estimatedCostContainer}>
           <div className={styles.estimatedCost}>
@@ -137,12 +88,7 @@ const Contract = () => {
             <button className={styles.visualizeButton} disabled>
               Visualize
             </button>
-            <button
-              className={styles.subscribeButton}
-              onClick={handleSendTransaction}
-            >
-              Subscribe
-            </button>
+            <button className={styles.subscribeButton}>Subscribe</button>
           </div>
         </div>
       </div>
