@@ -1,17 +1,30 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from './header.module.css';
-import { ConnectButton, lightTheme, useActiveWalletChain, useSwitchActiveWalletChain } from "thirdweb/react";
-import { sepolia, arbitrumSepolia, optimismSepolia, baseSepolia, ethereum } from 'thirdweb/chains';
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./header.module.css";
+import {
+  ConnectButton,
+  ConnectEmbed,
+  lightTheme,
+  useActiveWalletChain,
+  useSwitchActiveWalletChain,
+} from "thirdweb/react";
+import {
+  sepolia,
+  arbitrumSepolia,
+  optimismSepolia,
+  baseSepolia,
+  ethereum,
+} from "thirdweb/chains";
 import { createWallet } from "thirdweb/wallets";
-import { createThirdwebClient } from "thirdweb";
+import { client } from "../../../config/client";
 
-const client = createThirdwebClient({
-  clientId: "2f21db6159acb63222030de940b8ce82",
-});
-
-const supportedChains = [sepolia, arbitrumSepolia, optimismSepolia, baseSepolia];
+const supportedChains = [
+  sepolia,
+  arbitrumSepolia,
+  optimismSepolia,
+  baseSepolia,
+];
 
 const Header: React.FC = () => {
   const [vaultTooltipVisible, setVaultTooltipVisible] = useState(false);
@@ -21,7 +34,7 @@ const Header: React.FC = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const handleChangeChain = (chainId: number) => {
-    const selectedChain = supportedChains.find(chain => chain.id === chainId);
+    const selectedChain = supportedChains.find((chain) => chain.id === chainId);
     if (selectedChain) {
       switchChain(selectedChain).catch((error) => console.error(error));
       setDropdownVisible(false);
@@ -56,7 +69,9 @@ const Header: React.FC = () => {
             >
               Vaults
             </span>
-            {vaultTooltipVisible && <div className={styles.tooltip}>Under Construction</div>}
+            {vaultTooltipVisible && (
+              <div className={styles.tooltip}>Under Construction</div>
+            )}
             <span
               className={styles.dashboard}
               onMouseEnter={() => setDashboardTooltipVisible(true)}
@@ -64,15 +79,17 @@ const Header: React.FC = () => {
             >
               Dashboard
             </span>
-            {dashboardTooltipVisible && <div className={styles.tooltip}>Under Construction</div>}
+            {dashboardTooltipVisible && (
+              <div className={styles.tooltip}>Under Construction</div>
+            )}
           </div>
           <div className={styles.rightNav}>
             <div className={styles.chainSelector}>
-              <button 
-                className={styles.selectedChain} 
+              <button
+                className={styles.selectedChain}
                 onClick={() => setDropdownVisible(!dropdownVisible)}
               >
-                {activeChain?.name || 'Select Chain'}
+                {activeChain?.name || "Select Chain"}
               </button>
               {dropdownVisible && (
                 <div className={styles.dropdown}>
@@ -88,17 +105,27 @@ const Header: React.FC = () => {
                 </div>
               )}
             </div>
+            {/* <ConnectButton
+              client={client}
+              //   //   wallets={wallets}
+              //   theme={lightTheme({
+              //     colors: { accentText: "#8e9db4" },
+              //   })}
+              //   connectModal={{
+              //     size: "wide",
+              //     title: "Rgatt Protocol",
+              //     showThirdwebBranding: false,
+              //   }}
+            /> */}
             <ConnectButton
               client={client}
               wallets={wallets}
-              theme={lightTheme({
-                colors: { accentText: "#8e9db4" },
-              })}
               connectModal={{
                 size: "wide",
                 title: "Rgatt Protocol",
                 showThirdwebBranding: false,
               }}
+              chain={sepolia}
             />
           </div>
         </nav>

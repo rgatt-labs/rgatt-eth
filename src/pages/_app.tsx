@@ -1,11 +1,11 @@
 // pages/_app.tsx
 "use client";
 
-import { AppProps } from 'next/app';
-import Head from 'next/head';
-import '../styles/globals.css';
+import { AppProps } from "next/app";
+import Head from "next/head";
+import "../styles/globals.css";
 import { ThirdwebProvider } from "thirdweb/react"; // Supprime createThirdwebClient ici
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 // Initialise le client Thirdweb
 const queryClient = new QueryClient();
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <ThirdwebProvider> {/* Pas de client passé ici */}
+      <ThirdwebProvider>
         <QueryClientProvider client={queryClient}>
           <Component {...pageProps} />
         </QueryClientProvider>
