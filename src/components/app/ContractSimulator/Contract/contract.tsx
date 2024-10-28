@@ -1,26 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Contract.module.css";
 import ContractPopup from "../../ContractPopup/ContractPopup";
 import VehicleForm from "../../Forms/VehicleForm";
 import RealEstateForm from "../../Forms/RealEstateForm";
 import HealthForm from "../../Forms/HealthForm";
-import { parseAbi, parseEther } from "viem";
 import TokenSelect, { TokenData } from "./TokenSelect";
+import { sendTransaction, getContract, prepareContractCall } from "thirdweb";
+import { sepolia } from "thirdweb/chains";
+import { toEther, toTokens, toUnits, toWei } from "thirdweb";
+import { client } from "@/config/client";
+import { TransactionButton } from "thirdweb/react";
+import SummaryContract from "../SummaryContract";
 
 const CONTRACT_ADDRESS = "0x952d73ecef9db9c869faec604de445efe0bb5976";
 const VAULT_ADDRESS = "0x2A7eE92D92aCEaf3508B8b51481c11E46f79Dd94";
 
-const depositToVaultAbi = parseAbi([
-  "function depositToken(address token, uint256 amount) public",
-]);
+// const depositToVaultAbi = parseAbi([
+//   "function depositToken(address token, uint256 amount) public",
+// ]);
+
+export interface VehiclesContract {
+  _id: string;
+  contractType: string;
+  coverType: string;
+  typeVehicle: string;
+  useOfVehicle: string;
+  country: string;
+  city: string;
+  amount: number;
+}
 
 const Contract = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedContract, setSelectedContract] = useState<any>(null);
-  const [amount, setAmount] = useState<string>("");
   const [transactionToken, setTransactionToken] = useState<string>(
     TokenData.ETH_ADDRESS.address
   );
+
+  const [error, setError] = useState<string>("");
 
   const handleOpenPopup = () => setIsPopupOpen(true);
   const handleClosePopup = () => setIsPopupOpen(false);
@@ -29,10 +46,22 @@ const Contract = () => {
     setSelectedContract(contract);
   };
 
+  const [contractList, setContractList] = useState<VehiclesContract[]>([]);
+
+  useEffect(() => {
+    console.log("Contract list:", contractList);
+  }, [contractList]);
+
+  const smartContract = getContract({
+    address: VAULT_ADDRESS,
+    chain: sepolia,
+    client: client,
+  });
+
   const renderForm = () => {
     switch (selectedContract?.name) {
       case "Vehicle":
-        return <VehicleForm setAmount={setAmount} />;
+        return <VehicleForm setContractList={setContractList} />;
       case "Real Estate":
         return <RealEstateForm />;
       case "Health":
@@ -78,17 +107,51 @@ const Contract = () => {
             panel
           </p>
           <TokenSelect onChange={(token) => setTransactionToken(token)} />
+          {error && (
+            <p className={styles.description} style={{ color: "red" }}>
+              {error}
+            </p>
+          )}
+          <SummaryContract contractList={contractList} />
         </div>
         <div className={styles.estimatedCostContainer}>
           <div className={styles.estimatedCost}>
             <span>ESTIMATED COST</span>
-            {!amount ? <span>--/mo</span> : <span>{amount}$/mo</span>}
+            {!contractList ? (
+              <span>--/mo</span>
+            ) : (
+              <span>
+                {contractList.reduce((sum, current) => sum + current.amount, 0)}
+                $/mo
+              </span>
+            )}
           </div>
           <div className={styles.buttonContainer}>
             <button className={styles.visualizeButton} disabled>
               Visualize
             </button>
-            <button className={styles.subscribeButton}>Subscribe</button>
+            {/* <button className={styles.subscribeButton}>Subscribe</button> */}
+            <TransactionButton
+              transaction={() =>
+                prepareContractCall({
+                  contract: smartContract,
+                  method:
+                    "function depositToken(address token, uint256 amount) public",
+                  params: [
+                    transactionToken,
+                    toUnits(String(contractList[0].amount), 18),
+                  ],
+                })
+              }
+              onError={(error) => {
+                console.error(error.message);
+                setError(error.message);
+              }}
+              unstyled
+              className={styles.subscribeButton}
+            >
+              Subscribe
+            </TransactionButton>
           </div>
         </div>
       </div>

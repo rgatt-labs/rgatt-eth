@@ -15,7 +15,7 @@ if (!DEFAULT_COLLECTION) {
 let client: MongoClient;
 let clientPromise: Promise<MongoClient>;
 
-client = new MongoClient(DB_URL);
+client = new MongoClient(DB_URL, { connectTimeoutMS: 3000 });
 
 clientPromise = client.connect();
 

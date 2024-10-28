@@ -1,22 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styles from "./FormContainer.module.css";
 import axios from "axios";
-
-interface VehiclesContract {
-  _id: string;
-  contractType: string;
-  coverType: string;
-  typeVehicle: string;
-  useOfVehicle: string;
-  country: string;
-  city: string;
-  amount: number;
-}
+import { VehiclesContract } from "../ContractSimulator/Contract/contract";
 
 const VehicleForm = ({
-  setAmount,
+  setContractList,
 }: {
-  setAmount: (amount: string) => void;
+  setContractList: React.Dispatch<React.SetStateAction<VehiclesContract[]>>
 }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -27,6 +17,9 @@ const VehicleForm = ({
   const [useOfVehicle, setUseOfVehicle] = useState("Personal");
   const [country, setCountry] = useState("France");
   const [city, setCity] = useState("Paris");
+
+  const [attribContract, setAttributsContract] =
+    useState<VehiclesContract | null>(null);
 
   // Options for form fields
   const coverTypeOptions = ["Comprehensive", "Third-Party", "Collision"];
@@ -57,7 +50,9 @@ const VehicleForm = ({
           country: country,
           city: city,
         });
-        setAmount(response.data.amount.toString());
+        const vehicleType: VehiclesContract = response.data;
+        console.log("vehicleType after fetch:", vehicleType);
+        setAttributsContract(vehicleType);
       } catch (error) {
         setError(
           "Error occurred while fetching the amount for this configuration"
@@ -68,7 +63,15 @@ const VehicleForm = ({
     };
 
     fetchVehicles();
-  }, [coverType, typeVehicle, useOfVehicle, country, city, setAmount]);
+  }, [coverType, typeVehicle, useOfVehicle, country, city]);
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (attribContract) {
+      setContractList(con => [...con, attribContract])
+    }
+  };
+
 
   return (
     <div className={styles.formWrapper}>
@@ -80,7 +83,7 @@ const VehicleForm = ({
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
               <label className={styles.label}>Cover Type:</label>
               <select
@@ -162,6 +165,12 @@ const VehicleForm = ({
                 )}
               </select>
             </div>
+            <button
+              className={styles.submitButton}
+              type="submit"
+            >
+              Add to simulation
+            </button>
           </form>
         )}
       </div>

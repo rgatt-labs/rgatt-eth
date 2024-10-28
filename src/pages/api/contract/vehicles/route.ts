@@ -12,7 +12,6 @@ type Vehicle = {
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
 	const { cover, type, usage, country, city } = req.body as Vehicle;
-	console.log("ROUTE:", cover, type, usage, country, city);
 
 	if (!cover || !type || !usage || !country || !city) {
 	  return res.status(400).json({ error: 'All fields are required' });
@@ -21,18 +20,22 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	const retrieveVehicles = async () => {
 		const client = await clientPromise;
 		const db = client.db(DefaultCollection);
-		const vehicles = await db.collection("vehicle").findOne(
+		const vehicle = await db.collection("vehicle").findOne(
 			{ coverType: cover, typeVehicle: type, useOfVehicle: usage, country: country, city: city },
-			{ projection: { amount: 1 } }
 		);
-		return vehicles;
+		return vehicle;
 	}
 
-	const vehicle = await retrieveVehicles();
-	console.log(vehicle);
-	return res.status(200).json(vehicle);
+	try {
+		const vehicle = await retrieveVehicles();
+		return res.status(200).json(vehicle);
+	} catch (error) {
+		console.log(error);
+	}
 
   } else {
     res.status(405).end(`Method ${req.method} Not Allowed`)
   }
+
+  return res.status(500).end("Error occured try again");
 }
