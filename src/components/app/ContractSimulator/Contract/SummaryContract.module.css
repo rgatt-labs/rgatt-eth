@@ -1,0 +1,35 @@
+.container {
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 8px;
+  }
+  
+  .contract {
+	background: #1e3a8a;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	position: relative;
+  }
+  
+  .summary {
+	padding: 10px;
+	color: white;
+  }
+  
+  .details {
+	display: none;
+	width: 100%;
+	background: #4a78ff;
+	padding: 10px;
+	border-radius: 4px;
+	color: white;
+	/* z-index: 1; */
+  }
+  
+  .contract:hover .details {
+	display: block;
+  }
+  
+  .details p {
+	margin: 5px 0;
+  }

@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useId, useRef } from "react";
 import styles from "./FormContainer.module.css";
 import axios from "axios";
-import { VehiclesContract } from "../ContractSimulator/Contract/contract";
+import { VehiclesContract } from "../ContractSimulator/Contract/Contract";
 
 const VehicleForm = ({
   setContractList,
+  contractList,
 }: {
-  setContractList: React.Dispatch<React.SetStateAction<VehiclesContract[]>>
+  setContractList: React.Dispatch<React.SetStateAction<VehiclesContract[]>>;
+  contractList: VehiclesContract[];
 }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -38,40 +40,91 @@ const VehicleForm = ({
     Australia: ["Sydney", "Melbourne", "Brisbane"],
   };
 
-  useEffect(() => {
-    const fetchVehicles = async () => {
-      setLoading(true);
-      setError(null);
-      try {
-        const response = await axios.post(`/api/contract/vehicles/route`, {
-          cover: coverType,
-          type: typeVehicle,
-          usage: useOfVehicle,
-          country: country,
-          city: city,
-        });
-        const vehicleType: VehiclesContract = response.data;
-        console.log("vehicleType after fetch:", vehicleType);
-        setAttributsContract(vehicleType);
-      } catch (error) {
-        setError(
-          "Error occurred while fetching the amount for this configuration"
-        );
-      } finally {
-        setLoading(false);
-      }
+  const coverTypeRef = useRef<HTMLSelectElement>(null);
+  const typeVehicleRef = useRef<HTMLSelectElement>(null);
+  const useOfVehicleRef = useRef<HTMLSelectElement>(null);
+  const countryRef = useRef<HTMLSelectElement>(null);
+  const cityRef = useRef<HTMLSelectElement>(null);
+
+  //   useEffect(() => {
+  //     const fetchVehicles = async () => {
+  //       setLoading(true);
+  //       setError(null);
+  //       try {
+  //         const response = await axios.post(`/api/contract/vehicles/route`, {
+  //           cover: coverType,
+  //           type: typeVehicle,
+  //           usage: useOfVehicle,
+  //           country: country,
+  //           city: city,
+  //         });
+  //         const vehicleType: VehiclesContract = response.data;
+  //         console.log("vehicleType after fetch:", vehicleType);
+  //         setAttributsContract(vehicleType);
+  //       } catch (error) {
+  //         setError(
+  //           "Error occurred while fetching the amount for this configuration"
+  //         );
+  //       }
+  //       setLoading(false);
+  //     };
+
+  //     fetchVehicles();
+  //   }, [coverType, typeVehicle, useOfVehicle, country, city]);
+
+  const fetchContractDetails = async (formData: any) => {
+    // to change ANY
+    setLoading(true);
+    setError(null);
+
+    try {
+      const resContractDetails = await axios.post(
+        `api/contract/vehicles/route`, // change to details
+        {
+          cover: formData?.coverType,
+          type: formData?.typeVehicle,
+          usage: formData?.useOfVehicle,
+          country: formData?.country,
+          city: formData?.city,
+        }
+      );
+      const vehiclesData: VehiclesContract = resContractDetails.data;
+      console.log("vehicle details:", vehiclesData); // debug purpose
+      setAttributsContract(vehiclesData);
+    } catch (error) {
+      console.log(error);
+    }
+
+    setLoading(false);
+  };
+
+  const prepareFetching = () => {
+    // Retrieve values directly from refs
+    const formData = {
+      coverType: coverTypeRef.current?.value,
+      typeVehicle: typeVehicleRef.current?.value,
+      useOfVehicle: useOfVehicleRef.current?.value,
+      country: countryRef.current?.value,
+      city: cityRef.current?.value,
     };
 
-    fetchVehicles();
-  }, [coverType, typeVehicle, useOfVehicle, country, city]);
+    console.log("Form Data:", formData);
+    fetchContractDetails(formData);
+  };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (attribContract) {
-      setContractList(con => [...con, attribContract])
+      const newContractList = [...contractList, attribContract];
+      setContractList(() => {
+        return newContractList.filter(
+          (item, index) => newContractList.indexOf(item) === index
+        );
+      });
     }
+    console.log("contract list:", contractList);
   };
-
+  const anonymous = () => {};
 
   return (
     <div className={styles.formWrapper}>
@@ -89,6 +142,7 @@ const VehicleForm = ({
               <select
                 className={styles.select}
                 value={coverType}
+                ref={coverTypeRef}
                 onChange={(e) => setCoverType(e.target.value)}
               >
                 {coverTypeOptions.map((option) => (
@@ -104,6 +158,7 @@ const VehicleForm = ({
               <select
                 className={styles.select}
                 value={typeVehicle}
+                ref={typeVehicleRef}
                 onChange={(e) => setTypeVehicle(e.target.value)}
               >
                 {typeVehicleOptions.map((option) => (
@@ -119,6 +174,7 @@ const VehicleForm = ({
               <select
                 className={styles.select}
                 value={useOfVehicle}
+                ref={useOfVehicleRef}
                 onChange={(e) => setUseOfVehicle(e.target.value)}
               >
                 {useOfVehicleOptions.map((option) => (
@@ -134,6 +190,7 @@ const VehicleForm = ({
               <select
                 className={styles.select}
                 value={country}
+                ref={countryRef}
                 onChange={(e) => {
                   setCountry(e.target.value);
                   setCity(
@@ -154,6 +211,7 @@ const VehicleForm = ({
               <select
                 className={styles.select}
                 value={city}
+                ref={cityRef}
                 onChange={(e) => setCity(e.target.value)}
               >
                 {cityOptions[country as keyof typeof cityOptions].map(
@@ -165,12 +223,14 @@ const VehicleForm = ({
                 )}
               </select>
             </div>
-            <button
-              className={styles.submitButton}
-              type="submit"
-            >
-              Add to simulation
-            </button>
+            <div className={styles.buttonWrapper}>
+              <button className={styles.submitButton} onClick={prepareFetching}>
+                Fetch Price
+              </button>
+              <button className={styles.submitButton} type="submit">
+                Add to simulation
+              </button>
+            </div>
           </form>
         )}
       </div>

@@ -1,8 +1,8 @@
 // pages/index.tsx
-import React from 'react';
-import styles from './App.module.css';
-import Contract from '@/components/app/ContractSimulator/Contract/contract';
-import Header from '@/components/app/AppHeader/header';
+import React from "react";
+import styles from "./App.module.css";
+import Contract from "@/components/app/ContractSimulator/Contract/Contract";
+import Header from "@/components/app/AppHeader/header";
 
 const App: React.FC = () => {
   return (
