@@ -69,9 +69,19 @@ const Contract = () => {
           />
         );
       case "Real Estate":
-        return <RealEstateForm />;
+        return (
+          <RealEstateForm
+            setContractList={setContractList}
+            contractList={contractList}
+          />
+        );
       case "Health":
-        return <HealthForm />;
+        return (
+          <HealthForm
+            setContractList={setContractList}
+            contractList={contractList}
+          />
+        );
       default:
         return null;
     }
@@ -140,7 +150,6 @@ const Contract = () => {
               <button className={styles.visualizeButton} disabled>
                 Visualize
               </button>
-              {/* <button className={styles.subscribeButton}>Subscribe</button> */}
               <TransactionButton
                 transaction={() =>
                   prepareContractCall({
