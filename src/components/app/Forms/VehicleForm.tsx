@@ -1,52 +1,36 @@
 import React, { useState, useEffect, useRef } from "react";
-import styles from "./FormContainer.module.css";
 import axios from "axios";
-import { VehiclesContract } from "../ContractSimulator/Contract/Contract";
+import styles from "./FormContainer.module.css";
 
-const VehicleForm = ({
-	setContractList,
-	contractList,
-}: {
-	setContractList: React.Dispatch<React.SetStateAction<VehiclesContract[]>>;
-	contractList: VehiclesContract[];
-}) => {
-	const [loading, setLoading] = useState(false);
+// Generic type for form data
+type TemplateData = {
+	[key: string]: string[] | number[];
+};
+
+// Generic contract type
+type Contract = {
+	[key: string]: string | number;
+};
+
+const DynamicContractForm = () => {
+	// State for template and form management
+	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState<string | null>(null);
+	const [templateData, setTemplateData] = useState<TemplateData | null>(null);
+	const [contractType, setContractType] = useState<string>("");
+	const [formFields, setFormFields] = useState<{
+		[key: string]: string | number;
+	}>({});
+	const [fetchedContract, setFetchedContract] = useState<Contract | null>(null);
 	const [waitingFetchState, setWaitingFetchState] = useState(false);
 	const [timeLeft, setTimeLeft] = useState(10);
 
-	// State for form fields
-	const [coverType, setCoverType] = useState("Comprehensive");
-	const [typeVehicle, setTypeVehicle] = useState("Car");
-	const [useOfVehicle, setUseOfVehicle] = useState("Personal");
-	const [country, setCountry] = useState("France");
-	const [city, setCity] = useState("Paris");
-	const [attribContract, setAttributsContract] =
-		useState<VehiclesContract | null>(null);
+	// Refs for dynamic form fields
+	const formRefs = useRef<{
+		[key: string]: React.RefObject<HTMLSelectElement>;
+	}>({});
 
-	// Options for form fields
-	//   const coverTypeOptions = ["Comprehensive", "Third-Party", "Collision"];
-	//   const typeVehicleOptions = ["Car", "Motorcycle", "Truck"];
-	//   const useOfVehicleOptions = ["Personal", "Commercial"];
-	//   const countryOptions = [
-	//     "France",
-	//     "United Kingdom",
-	//     "United States",
-	//     "Australia",
-	//   ];
-	//   const cityOptions = {
-	//     France: ["Paris", "Lyon", "Marseille"],
-	//     "United Kingdom": ["London", "Manchester", "Birmingham"],
-	//     "United States": ["New York", "Los Angeles", "Chicago"],
-	//     Australia: ["Sydney", "Melbourne", "Brisbane"],
-	//   };
-
-	const coverTypeRef = useRef<HTMLSelectElement>(null);
-	const typeVehicleRef = useRef<HTMLSelectElement>(null);
-	const useOfVehicleRef = useRef<HTMLSelectElement>(null);
-	const countryRef = useRef<HTMLSelectElement>(null);
-	const cityRef = useRef<HTMLSelectElement>(null);
-
+	// Timer effect for waiting state
 	useEffect(() => {
 		let timer: NodeJS.Timeout;
 		if (waitingFetchState) {
@@ -65,167 +49,163 @@ const VehicleForm = ({
 		return () => clearInterval(timer);
 	}, [waitingFetchState]);
 
-	const fetchContractDetails = async (formData: any) => {
-		setError(null);
-		try {
-			const resContractDetails = await axios.post(
-				`api/contract/vehicles/route`,
-				{
-					cover: formData?.coverType,
-					type: formData?.typeVehicle,
-					usage: formData?.useOfVehicle,
-					country: formData?.country,
-					city: formData?.city,
-				}
-			);
-			const vehiclesData: VehiclesContract = resContractDetails.data;
-			setAttributsContract(vehiclesData);
-		} catch (error) {
-			console.log(error);
-		}
-	};
+	// Fetch template data on component mount
+	useEffect(() => {
+		const fetchTemplateData = async () => {
+			try {
+				const response = await axios.post("/api/contract/template/vehicle");
+				setTemplateData(response.data);
 
-	const prepareFetching = () => {
-		const formData = {
-			coverType: coverTypeRef.current?.value,
-			typeVehicle: typeVehicleRef.current?.value,
-			useOfVehicle: useOfVehicleRef.current?.value,
-			country: countryRef.current?.value,
-			city: cityRef.current?.value,
+				// Set initial contract type and form fields
+				if (
+					response.data.contractType &&
+					response.data.contractType.length > 0
+				) {
+					const initialContractType = response.data.contractType[0];
+					setContractType(initialContractType);
+
+					// Initialize form fields with first options
+					const initialFields: { [key: string]: string | number } = {};
+					Object.keys(response.data)
+						.filter((key) => key !== "contractType")
+						.forEach((key) => {
+							// Use first option for each field
+							initialFields[key] = response.data[key][0];
+
+							// Create ref for each field
+							formRefs.current[key] = React.createRef<HTMLSelectElement>();
+						});
+
+					setFormFields(initialFields);
+				}
+
+				setLoading(false);
+			} catch (err) {
+				setError("Failed to load template data");
+				setLoading(false);
+			}
 		};
 
-		setWaitingFetchState(true);
-		fetchContractDetails(formData);
-	};
+		fetchTemplateData();
+	}, []);
 
-	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-		event.preventDefault();
-		if (attribContract) {
-			const newContractList = [...contractList, attribContract];
-			setContractList(() => {
-				return newContractList.filter(
-					(item, index) => newContractList.indexOf(item) === index
-				);
-			});
+	// Fetch contract details
+	const fetchContractDetails = async () => {
+		setError(null);
+		setWaitingFetchState(true);
+		try {
+			const resContractDetails = await axios.post(
+				`/api/contract/${contractType}/route`,
+				formFields
+			);
+			setFetchedContract(resContractDetails.data);
+		} catch (error) {
+			console.log(error);
+			setError("Failed to fetch contract details");
+		} finally {
+			setWaitingFetchState(false);
 		}
 	};
+
+	// Handle form field changes
+	const handleFieldChange = (field: string, value: string | number) => {
+		const updatedFields = { ...formFields, [field]: value };
+
+		// Special handling for country-city dynamic update
+		if (field === "country" && templateData) {
+			// Filter cities for the selected country
+			const citiesForCountry = templateData.city.filter((city) =>
+				city.toLowerCase().includes(value.toString().toLowerCase())
+			);
+
+			// Update city to first available city in the country
+			if (citiesForCountry.length > 0) {
+				updatedFields["city"] = citiesForCountry[0];
+			}
+		}
+
+		setFormFields(updatedFields);
+	};
+
+	// Render dynamic form fields
+	const renderFormFields = () => {
+		if (!templateData) return null;
+
+		return Object.keys(templateData)
+			.filter((key) => key !== "contractType")
+			.map((key) => (
+				<div key={key} className={styles.formGroup}>
+					<label className={styles.label}>
+						{key
+							.replace(/([A-Z])/g, " $1")
+							.replace(/^./, (str) => str.toUpperCase())}
+					</label>
+					<select
+						ref={formRefs.current[key]}
+						value={formFields[key] || ""}
+						onChange={(e) => handleFieldChange(key, e.target.value)}
+						className={styles.select}
+					>
+						{(templateData[key] as string[]).map((option) => (
+							<option key={option} value={option}>
+								{option}
+							</option>
+						))}
+					</select>
+				</div>
+			));
+	};
+
+	// Handle form submission
+	const handleSubmit = (e: React.FormEvent) => {
+		e.preventDefault();
+		fetchContractDetails();
+	};
+
+	if (loading)
+		return (
+			<div className={`${styles.formWrapper} ${styles.loading}`}>
+				<div className={styles.loadingSpinner}></div>
+				Loading...
+			</div>
+		);
 
 	return (
 		<div className={styles.formWrapper}>
-			<div className="w-fit rounded-lg">
-				<h2>Vehicle Form</h2>
-				{error && <p className="text-red-600 mb-4">{error}</p>}
-				{loading ? (
-					<p>Loading...</p>
-				) : (
-					<form className={styles.form} onSubmit={handleSubmit}>
-						<div className={styles.formGroup}>
-							<label className={styles.label}>Cover Type:</label>
-							<select
-								className={styles.select}
-								value={coverType}
-								ref={coverTypeRef}
-								onChange={(e) => setCoverType(e.target.value)}
-							>
-								{coverTypeOptions.map((option) => (
-									<option key={option} value={option}>
-										{option}
-									</option>
-								))}
-							</select>
-						</div>
+			<form className={styles.form} onSubmit={handleSubmit}>
+				<h2 className={styles.formTitle}>Vehicle Insurance Contract</h2>
 
-						<div className={styles.formGroup}>
-							<label className={styles.label}>Type of Vehicle:</label>
-							<select
-								className={styles.select}
-								value={typeVehicle}
-								ref={typeVehicleRef}
-								onChange={(e) => setTypeVehicle(e.target.value)}
-							>
-								{typeVehicleOptions.map((option) => (
-									<option key={option} value={option}>
-										{option}
-									</option>
-								))}
-							</select>
-						</div>
+				{error && <div className={styles.error}>{error}</div>}
 
-						<div className={styles.formGroup}>
-							<label className={styles.label}>Use of Vehicle:</label>
-							<select
-								className={styles.select}
-								value={useOfVehicle}
-								ref={useOfVehicleRef}
-								onChange={(e) => setUseOfVehicle(e.target.value)}
-							>
-								{useOfVehicleOptions.map((option) => (
-									<option key={option} value={option}>
-										{option}
-									</option>
-								))}
-							</select>
-						</div>
+				{renderFormFields()}
 
-						<div className={styles.formGroup}>
-							<label className={styles.label}>Country:</label>
-							<select
-								className={styles.select}
-								value={country}
-								ref={countryRef}
-								onChange={(e) => {
-									setCountry(e.target.value);
-									setCity(
-										cityOptions[e.target.value as keyof typeof cityOptions][0]
-									);
-								}}
-							>
-								{countryOptions.map((option) => (
-									<option key={option} value={option}>
-										{option}
-									</option>
-								))}
-							</select>
-						</div>
+				<div className={styles.buttonsContainer}>
+					<button
+						type="button"
+						className={styles.submitButton}
+						onClick={fetchContractDetails}
+						disabled={waitingFetchState}
+					>
+						{waitingFetchState ? timeLeft : "Fetch Price"}
+					</button>
+					<button type="submit" className={styles.submitButton}>
+						Add to Simulation
+					</button>
+				</div>
+			</form>
 
-						<div className={styles.formGroup}>
-							<label className={styles.label}>City:</label>
-							<select
-								className={styles.select}
-								value={city}
-								ref={cityRef}
-								onChange={(e) => setCity(e.target.value)}
-							>
-								{cityOptions[country as keyof typeof cityOptions].map(
-									(option) => (
-										<option key={option} value={option}>
-											{option}
-										</option>
-									)
-								)}
-							</select>
-						</div>
-
-						<div className={styles.buttonWrapper}>
-							<button
-								className={`${styles.submitButton} ${
-									waitingFetchState ? "opacity-50 cursor-not-allowed" : ""
-								}`}
-								onClick={prepareFetching}
-								disabled={waitingFetchState}
-								type="button"
-							>
-								{waitingFetchState ? timeLeft : "Fetch Price"}
-							</button>
-							<button className={styles.submitButton} type="submit">
-								Add to simulation
-							</button>
-						</div>
-					</form>
-				)}
-			</div>
+			{fetchedContract && (
+				<div className="mt-4 p-4 bg-gray-800 rounded">
+					<h3 className="font-bold mb-2 text-white">
+						Fetched Contract Details:
+					</h3>
+					<pre className="text-gray-300">
+						{JSON.stringify(fetchedContract, null, 2)}
+					</pre>
+				</div>
+			)}
 		</div>
 	);
 };
 
-export default VehicleForm;
+export default DynamicContractForm;
