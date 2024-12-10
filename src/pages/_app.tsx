@@ -4,7 +4,7 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 import "../styles/globals.css";
-import { ThirdwebProvider } from "thirdweb/react"; // Supprime createThirdwebClient ici
+import { ThirdwebProvider } from "thirdweb/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 // Initialise le client Thirdweb
